@@ -2,18 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-    <title>Material Kit by Creative Tim</title>
+    <title>Nigerian Association of London and Area</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
 
-    <!--     Fonts and icons     -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts and icons -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 
     <!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
@@ -21,7 +39,6 @@
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="assets/css/demo.css" rel="stylesheet"/>
-
 </head>
 
 <body class="index-page">
@@ -34,18 +51,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://www.creative-tim.com">
+            <a href="https://www.nigeriaassociation.ca/">
                 <div class="logo-container">
                     <div class="logo">
-                        <img src="assets/img/logo.png" alt="Creative Tim Logo" rel="tooltip"
-                             title="<b>Material Kit</b> was Designed & Coded with care by the staff from <b>Creative Tim</b>"
+                        <img src="assets/img/logo.png" alt="Nigerian Association of London and Area Logo" rel="tooltip"
+                             title="<b>Nigerian Association of London and Area</b>"
                              data-placement="bottom" data-html="true">
                     </div>
-                    <div class="brand">
-                        Creative Tim
-                    </div>
-
-
+                    <div class="brand">Nigerian Association of London and Area</div>
                 </div>
             </a>
         </div>
@@ -88,17 +101,16 @@
 <!-- End Navbar -->
 
 <div class="wrapper">
-    <div class="header header-filter" style="background-image: url('assets/img/bg2.jpeg');">
+    <div class="header header-filter" style="background-image: url('assets/img/bg5.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="brand">
-                        <h1>Material Kit.</h1>
-                        <h3>A Badass Bootstrap UI Kit based on Material Design.</h3>
+                        <h1>Nigerian Association of London and Area.</h1>
+                        <h3>London Ontario, Canada</h3>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -115,24 +127,16 @@
             <nav class="pull-left">
                 <ul>
                     <li>
-                        <a href="#">
-                            Home
-                        </a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">
-                            Company
-                        </a>
+                        <a href="#">Company</a>
                     </li>
                     <li>
-                        <a href="#">
-                            Portfolio
-                        </a>
+                        <a href="#">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#">
-                            Blog
-                        </a>
+                        <a href="#">Blog</a>
                     </li>
                 </ul>
             </nav>
@@ -186,7 +190,6 @@
 </div>
 <!--  End Modal -->
 
-
 </body>
 <!--   Core JS Files   -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
@@ -203,7 +206,6 @@
 <script src="assets/js/material-kit.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-
     $().ready(function () {
         // the body of this function is in assets/material-kit.js
         materialKit.initSliders();
@@ -216,7 +218,6 @@
 
             $(window).on('scroll', materialKitDemo.checkScrollForParallax);
         }
-
     });
 </script>
 </html>
