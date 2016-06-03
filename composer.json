@@ -1,0 +1,15 @@
+{
+  "name": "developers-foundation/nigerian-association",
+  "description": "Website for Nigerian Association of London and Area",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Harrison Chow",
+      "email": "harrison@developersfoundation.ca"
+    }
+  ],
+  "require": {
+    "sendgrid/sendgrid": "4.0.4"
+  }
+}
