@@ -6,4 +6,4 @@
  * Time: 10:55 PM
  */
 
-include_once("index.html");
+include_once("index2.html");
