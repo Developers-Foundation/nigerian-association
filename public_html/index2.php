@@ -117,9 +117,16 @@
     <div class="main main-raised">
         <div class="section section-basic">
             <div class="container">
-                <div class="title">test</div>
+                <div class="title">
+                    <h2>H2</h2>
+                </div>
+
+                <div>
+                    <div class="title"><h3>H3</h3></div>
+                </div>
             </div>
         </div>
+        <div class="section section-basic"> </div>
     </div>
 
     <footer class="footer">
