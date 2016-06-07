@@ -65,17 +65,21 @@ $(document).ready(function () {
         else e.returnValue = false;
 
         var thisForm = $(this).closest('form.form-email');
-        document.getElementsByClassName("form-email")[0].getElementsByTagName("button")[0].disabled = true
+        var submitButton = thisForm.find('button')[0];
+        submitButton.prop("disabled", true);
+        var emailField = thisForm.find('.form-email-email')[0];
+        var nameField = thisForm.find('.form-email-name')[0];
+        var messageField = thisForm.find('.form-email-message')[0];
 
         if (thisForm.attr('data-form-type').indexOf("nob") > -1) {
             // Nob form
-            var sendFrom = document.getElementById("email").value,
+            var sendFrom = emailField.val(),
                 sendTo = "harrisonchowhk@yahoo.com",
-                subject = "Message from " + sendFrom,
-                msg = document.getElementById("message").value,
-                msgHTML = "<p>" + document.getElementById("message").value + "<p>",
-                fromName = "CSA York",
-                toName = "CSA York Execs";
+                subject = "Message from " + nameField.val(),
+                msg = messageField.val(),
+                msgHTML = "<p>" + messageField.val() + "<p>",
+                fromName = nameField.val(),
+                toName = "Nigerian Association of London and Area";
 
             var sendData = JSON.stringify({
                 'sendFrom': sendFrom,
@@ -106,12 +110,12 @@ $(document).ready(function () {
                         // Throw error message
 
                     }
-                    document.getElementsByClassName("form-email")[0].getElementsByTagName("button")[0].disabled = false;
+                    submitButton.prop("disabled", false);
                 },
                 error: function (error) {
                     console.log(error);
                     // Throw error message
-                    document.getElementsByClassName("form-email")[0].getElementsByTagName("button")[0].disabled = false;
+                    submitButton.prop("disabled", false);
                 }
             });
         }
