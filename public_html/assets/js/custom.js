@@ -109,11 +109,11 @@ $(document).ready(function () {
                         emailField.val("");
                         nameField.val("");
                         messageField.val("");
-                        submitButton.val("Sent");
+                        submitButton.html("Received");
                         submitButton.addClass("btn-success");
                     } else {
                         // Throw error message
-                        submitButton.val("Sorry an error occured");
+                        submitButton.html("Sorry an error occured");
                         submitButton.addClass("btn-danger");
                     }
                     submitButton.prop("disabled", false);
@@ -121,7 +121,7 @@ $(document).ready(function () {
                 error: function (error) {
                     console.log(error);
                     // Throw error message
-                    submitButton.val("Sorry an error occured");
+                    submitButton.html("Sorry an error occured");
                     submitButton.removeClass("btn-primary");
                     submitButton.addClass("btn-danger");
                     submitButton.prop("disabled", false);
