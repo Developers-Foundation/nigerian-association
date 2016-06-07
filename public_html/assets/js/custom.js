@@ -65,11 +65,11 @@ $(document).ready(function () {
         else e.returnValue = false;
 
         var thisForm = $(this).closest('form.form-email');
-        var submitButton = thisForm.find('button')[0];
+        var submitButton = thisForm.find('button');
         submitButton.prop("disabled", true);
-        var emailField = thisForm.find('.form-email-email')[0];
-        var nameField = thisForm.find('.form-email-name')[0];
-        var messageField = thisForm.find('.form-email-message')[0];
+        var emailField = thisForm.find('.form-email-email');
+        var nameField = thisForm.find('.form-email-name');
+        var messageField = thisForm.find('.form-email-message');
 
         if (thisForm.attr('data-form-type').indexOf("nob") > -1) {
             // Nob form
