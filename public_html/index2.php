@@ -323,7 +323,7 @@
                         <div class="col-md-6 left">
                             <div class="input-group">
 		                    <span class="input-group-addon">
-			                    <i class="fa fa-group"></i>
+			                    <i class="fa fa-user"></i>
 		                    </span>
                                 <input type="text" class="form-control form-input-name" placeholder="Your Name">
                             </div>
