@@ -325,18 +325,17 @@
 		                    <span class="input-group-addon">
 			                    <i class="fa fa-group"></i>
 		                    </span>
-                                <input type="text" class="form-control" placeholder="Your Name" class="form-email-name">
+                                <input type="text" class="form-control form-input-name" placeholder="Your Name">
                             </div>
                             <div class="input-group">
 		                    <span class="input-group-addon">
 			                    <i class="fa fa-group"></i>
 		                    </span>
-                                <input type="text" class="form-control" placeholder="Your Email"
-                                       class="form-email-email">
+                                <input type="text" class="form-control form-input-email" placeholder="Your Email">
                             </div>
                         </div>
                         <div class="col-md-6 right">
-                            <textarea class="form-control form-email-message" placeholder="Your Message"
+                            <textarea class="form-control form-input-message" placeholder="Your Message"
                                       rows="5"></textarea>
                         </div>
                         <div class="col-md-12 text-center">

@@ -67,9 +67,9 @@ $(document).ready(function () {
         var thisForm = $(this).closest('form.form-email');
         var submitButton = thisForm.find('button');
         submitButton.prop("disabled", true);
-        var emailField = thisForm.find('.form-email-email');
-        var nameField = thisForm.find('.form-email-name');
-        var messageField = thisForm.find('.form-email-message');
+        var emailField = thisForm.find('.form-input-email');
+        var nameField = thisForm.find('.form-input-name');
+        var messageField = thisForm.find('.form-input-message');
 
         if (thisForm.attr('data-form-type').indexOf("nob") > -1) {
             // Nob form
@@ -102,7 +102,7 @@ $(document).ready(function () {
                 success: function (data) {
                     // Deal with JSON
                     console.log(data);
-                    var returnData = JSON.parse(data.responseText);
+                    var returnData = data;
                     if (returnData.success) {
                         // Throw success msg
 
