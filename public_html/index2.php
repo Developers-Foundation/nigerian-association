@@ -66,16 +66,6 @@
 
         <div class="collapse navbar-collapse" id="navigation-index">
             <ul class="nav navbar-nav navbar-right">
-                <!--<li>
-                    <a href="components-documentation.html" class="btn" target="_blank">
-                        <i class="material-icons">dashboard</i> Components
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.creative-tim.com/product/material-kit" target="_blank" class="btn">
-                        <i class="material-icons">cloud_download</i> Download
-                    </a>
-                </li>-->
                 <li>
                     <a href="#" class="btn" target="_blank">
                         <i class="material-icons">dashboard</i> Photo Gallery
