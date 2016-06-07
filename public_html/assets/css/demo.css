@@ -119,17 +119,17 @@
     overflow: hidden;
     /*border-radius: 50%;*/
     border: 1px solid #333333;
-    width: 50px;
+    width: 70px;
     float: left;
 }
 
 .logo-container .brand{
     font-size: 16px;
     color: #FFFFFF;
-    line-height: 18px;
+    line-height: 40px;
     float: left;
     margin-left: 10px;
-    margin-top: 7px;
+    margin-top: 0;
     width: 400px;
     height: 40px;
     text-align: left;
@@ -367,4 +367,37 @@
 .components-page .title,
 .tutorial-page .title{
     color: #FFFFFF;
+}
+
+.vcenter {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.carousel-inner .active.left  { left: -33%;             }
+.carousel-inner .active.right { left: 33%;              }
+.carousel-inner .next         { left: 33%               }
+.carousel-inner .prev         { left: -33%              }
+.carousel-control.left        { background-image: none; }
+.carousel-control.right       { background-image: none; }
+.carousel-inner .item         { background: white;      }
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-inner > .item.next,
+    .carousel-inner > .item.active.right {
+        left: 0;
+        -webkit-transform: translate3d(33%, 0, 0);
+        transform: translate3d(33%, 0, 0);
+    }
+    .carousel-inner > .item.prev,
+    .carousel-inner > .item.active.left {
+        left: 0;
+        -webkit-transform: translate3d(-33%, 0, 0);
+        transform: translate3d(-33%, 0, 0);
+    }
+}
+
+#google_map {
+    height: 500px;
 }

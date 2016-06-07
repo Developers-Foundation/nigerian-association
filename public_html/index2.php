@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
@@ -53,19 +53,20 @@
             </button>
             <a href="https://www.nigeriaassociation.ca/">
                 <div class="logo-container">
-                    <div class="logo">
+                    <div class="logo vcenter">
                         <img src="assets/img/logo.png" alt="Nigerian Association of London and Area Logo" rel="tooltip"
                              title="<b>Nigerian Association of London and Area</b>"
                              data-placement="bottom" data-html="true">
-                    </div>
-                    <div class="brand">Nigerian Association of London and Area</div>
+                    </div><!--
+                    -->
+                    <div class="brand vcenter">Nigerian Association of London and Area</div>
                 </div>
             </a>
         </div>
 
         <div class="collapse navbar-collapse" id="navigation-index">
             <ul class="nav navbar-nav navbar-right">
-                <li>
+                <!--<li>
                     <a href="components-documentation.html" class="btn" target="_blank">
                         <i class="material-icons">dashboard</i> Components
                     </a>
@@ -74,26 +75,35 @@
                     <a href="http://www.creative-tim.com/product/material-kit" target="_blank" class="btn">
                         <i class="material-icons">cloud_download</i> Download
                     </a>
+                </li>-->
+                <li>
+                    <a href="#" class="btn" target="_blank">
+                        <i class="material-icons">dashboard</i> Photo Gallery
+                    </a>
                 </li>
                 <li>
                     <a rel="tooltip" title="Follow us on Twitter" data-placement="bottom"
-                       href="https://twitter.com/CreativeTim" target="_blank" class="btn btn-simple">
+                       href="https://twitter.com/" target="_blank" class="btn btn-simple">
                         <i class="fa fa-twitter"></i>
                     </a>
                 </li>
                 <li>
                     <a rel="tooltip" title="Like us on Facebook" data-placement="bottom"
-                       href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-simple">
+                       href="https://www.facebook.com/" target="_blank" class="btn btn-simple">
                         <i class="fa fa-facebook-square"></i>
                     </a>
                 </li>
                 <li>
                     <a rel="tooltip" title="Follow us on Instagram" data-placement="bottom"
-                       href="https://www.instagram.com/CreativeTimOfficial" target="_blank" class="btn btn-simple">
+                       href="https://www.instagram.com/" target="_blank" class="btn btn-simple">
                         <i class="fa fa-instagram"></i>
                     </a>
                 </li>
-
+                <li>
+                    <button class="btn btn-raised btn-warning" rel="tooltip" title="Interested in Volunteering?" data-placement="bottom" data-toggle="modal" data-target="#volunteerModal">
+                        <i class="material-icons">tag_faces</i> Volunteer Now
+                    </button>
+                </li>
             </ul>
         </div>
     </div>
@@ -115,18 +125,240 @@
     </div>
 
     <div class="main main-raised">
-        <div class="section section-basic">
+        <div class="section">
             <div class="container">
                 <div class="title">
-                    <h2>H2</h2>
+                    <h2>Who We Are</h2>
                 </div>
-
-                <div>
-                    <div class="title"><h3>H3</h3></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/img/photos/01.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-md-8">
+                        <p>The Nigerian Association of London and Area (NALA) is a community of Londoners of Nigerian
+                            descent.</p>
+                        <p>The new NALA is preceded by a similar organization that existed until the 90s. The Nigerian
+                            community met on March 7, 2015 where the Interim Management Team (IMT) was formed.</p>
+                        <p>The IMT then convened a Special General Meeting on August 8, 2015 where New Officers were
+                            elected and the IMT handed over to the new team.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section section-basic"> </div>
+        <div class="section" style="background-image: url('assets/img/city.jpg')">
+
+            <div class="container">
+                <div class="title">
+                    <h2>Our Team</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card card-carousel">
+                            <div class="carousel slide" id="teamCarousel" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#teamCarousel" data-slide-to="1" class="active"></li>
+                                    <li data-target="#teamCarousel" data-slide-to="2" class=""></li>
+                                    <li data-target="#teamCarousel" data-slide-to="3" class=""></li>
+                                    <li data-target="#teamCarousel" data-slide-to="4" class=""></li>
+                                    <li data-target="#teamCarousel" data-slide-to="5" class=""></li>
+                                    <li data-target="#teamCarousel" data-slide-to="0" class=""></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <img src="assets/img/default-user.png" class="img-responsive">
+                                                <div class="carousel-caption">
+                                                    <h4><i class="material-icons">location_on</i> 1</h4>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <img src="assets/img/default-user.png" class="img-responsive">
+                                                <div class="carousel-caption">
+                                                    <h4><i class="material-icons">location_on</i> 2</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <img src="assets/img/default-user.png" class="img-responsive">
+                                                <div class="carousel-caption">
+                                                    <h4><i class="material-icons">location_on</i> 3</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <img src="assets/img/default-user.png" class="img-responsive">
+                                                <div class="carousel-caption">
+                                                    <h4><i class="material-icons">location_on</i> 4</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <img src="assets/img/default-user.png" class="img-responsive">
+                                                <div class="carousel-caption">
+                                                    <h4><i class="material-icons">location_on</i> 5</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item active">
+                                        <div class="col-md-4">
+                                            <a href="#">
+                                                <img src="assets/img/default-user.png" class="img-responsive">
+                                                <div class="carousel-caption">
+                                                    <h4><i class="material-icons">location_on</i> 6</h4>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#teamCarousel" data-slide="prev">
+                                    <i class="material-icons black-icon">keyboard_arrow_left</i>
+                                </a>
+                                <a class="right carousel-control" href="#teamCarousel" data-slide="next">
+                                    <i class="material-icons black-icon">keyboard_arrow_right</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="title">
+                    <h2>What We Do</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card card-nav-tabs">
+                            <div class="header header-primary">
+                                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                                <div class="nav-tabs-navigation">
+                                    <div class="nav-tabs-wrapper">
+                                        <ul class="nav nav-tabs" data-tabs="tabs">
+                                            <li class="active">
+                                                <a href="#item1" data-toggle="tab">
+                                                    <i class="material-icons">face</i>
+                                                    Inaugural Meet & Greet
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#item2" data-toggle="tab">
+                                                    <i class="material-icons">chat</i>
+                                                    Blasts from the Past
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#item3" data-toggle="tab">
+                                                    <i class="material-icons">photo_camera</i>
+                                                    Gallery
+                                                </a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="tab-content text-center">
+                                    <div class="tab-pane active" id="item1">
+                                        <p>On March 7, 2015, members of the Nigerian community in the London area met
+                                            for the first time to deliberate on the relaunch of the Nigerian Association
+                                            of London and Area in London, Ontario.</p>
+
+                                        <blockquote>
+                                            <p>Venue: Holiday Inn & Suites, 855 Wellington Road South</p>
+                                            <p>Time: 2PM – 6PM</p>
+                                            <small>To learn more, please contact the Interim Management Team.</small>
+                                        </blockquote>
+                                        <p><b>This event has now ended.</b></p>
+                                    </div>
+                                    <div class="tab-pane" id="item2">
+                                        <p>In the early days, we had the Nigerian Association of London and Area. The
+                                            association was vibrant and made several accomplishments. Some of these are
+                                            chronicled in these pages.</p>
+                                        <h5>President’s Messages in WAZOBIA Newsletters</h5>
+                                        <a href="https://issuu.com/nigeriaassociation/docs/1993_babies_edition?e=15507290/11344199">
+                                            <p>November 1993, 1993 Recession Babies</p></a>
+                                        <a href="https://issuu.com/nigeriaassociation/docs/nov_1994?e=15507290/11344475">
+                                            <p>November 1994, A severely handicapped race</p></a>
+                                        <a href="https://issuu.com/nigeriaassociation/docs/dec_1994_86171dce926471?e=15507290/11344902">
+                                            <p>December 1994, A Christmas Wish</p></a>
+                                        <a href="https://issuu.com/nigeriaassociation/docs/feb_1995?e=15507290/11344984">
+                                            <p>February 1995, A good year</p></a>
+                                    </div>
+                                    <div class="tab-pane" id="item3">
+                                        <h3>Visit this page for our gallery.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="title">
+                    <h2>Give a Suggestion</h2>
+                    <small>Do you have useful suggestion(s) for us or do you think you do?</small>
+                    <small>If yes, please tell us below. We like to hear from you.</small>
+                </div>
+                <div class="row">
+                    <form class="form-email" action="" method="post" data-form-type="nob">
+                        <div class="col-md-6 left">
+                            <div class="input-group">
+		                    <span class="input-group-addon">
+			                    <i class="fa fa-group"></i>
+		                    </span>
+                                <input type="text" class="form-control" placeholder="Your Name" class="form-email-name">
+                            </div>
+                            <div class="input-group">
+		                    <span class="input-group-addon">
+			                    <i class="fa fa-group"></i>
+		                    </span>
+                                <input type="text" class="form-control" placeholder="Your Email"
+                                       class="form-email-email">
+                            </div>
+                        </div>
+                        <div class="col-md-6 right">
+                            <textarea class="form-control form-email-message" placeholder="Your Message"
+                                      rows="5"></textarea>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button class="btn btn-raised btn-primary btn-lg">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="title">
+                    <h2>Find Us Here</h2>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis elementum est.
+                        Vestibulum nec orci eu ipsum imperdiet mattis.
+                    </small>
+                </div>
+            </div>
+            <div id="google_map"></div>
+
+        </div>
     </div>
 
     <footer class="footer">
@@ -169,7 +401,7 @@
 </div>
 
 <!-- Sart Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="volunteerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -201,6 +433,7 @@
 <!--   Core JS Files   -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="//maps.google.com/maps/api/js?sensor=true"></script>
 <script src="assets/js/material.min.js"></script>
 
 <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
@@ -212,10 +445,12 @@
 <!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
 <script src="assets/js/material-kit.js" type="text/javascript"></script>
 
+<script src="assets/js/custom.js" type="text/javascript"></script>
+
 <script type="text/javascript">
     $().ready(function () {
         // the body of this function is in assets/material-kit.js
-        materialKit.initSliders();
+        //materialKit.initSliders();
         $(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
 
         window_width = $(window).width();

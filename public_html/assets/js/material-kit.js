@@ -26,7 +26,7 @@ $(document).ready(function(){
 
     // Active Carousel
 	$('.carousel').carousel({
-      interval: 400000
+      interval: 5000
     });
 
 });
@@ -48,7 +48,7 @@ materialKit = {
                     $('.navbar-color-on-scroll').addClass('navbar-transparent');
                 }
             }
-    }, 17),
+    }, 17)/*,
 
     initSliders: function(){
         // Sliders for demo purpose
@@ -69,7 +69,7 @@ materialKit = {
                 max: 100
             }
         });
-    }
+    }*/
 }
 
 
