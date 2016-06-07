@@ -103,18 +103,27 @@ $(document).ready(function () {
                     // Deal with JSON
                     console.log(data);
                     var returnData = data;
+                    submitButton.removeClass("btn-primary");
                     if (returnData.success) {
                         // Throw success msg
-
+                        emailField.val("");
+                        nameField.val("");
+                        messageField.val("");
+                        submitButton.val("Sent");
+                        submitButton.addClass("btn-success");
                     } else {
                         // Throw error message
-
+                        submitButton.val("Sorry an error occured");
+                        submitButton.addClass("btn-danger");
                     }
                     submitButton.prop("disabled", false);
                 },
                 error: function (error) {
                     console.log(error);
                     // Throw error message
+                    submitButton.val("Sorry an error occured");
+                    submitButton.removeClass("btn-primary");
+                    submitButton.addClass("btn-danger");
                     submitButton.prop("disabled", false);
                 }
             });
