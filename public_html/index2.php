@@ -329,7 +329,7 @@
                             </div>
                             <div class="input-group">
 		                    <span class="input-group-addon">
-			                    <i class="fa fa-group"></i>
+			                    <i class="fa fa-envelope"></i>
 		                    </span>
                                 <input type="text" class="form-control form-input-email" placeholder="Your Email">
                             </div>
