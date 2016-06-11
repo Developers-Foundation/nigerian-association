@@ -6,6 +6,7 @@
  * Time: 10:55 PM
  */
 
+$page = "index-page";
 include_once("header.php");
 include_once("index2.php");
 include_once("footer.php");

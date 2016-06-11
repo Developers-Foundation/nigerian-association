@@ -41,7 +41,7 @@
     <link href="assets/css/demo.css" rel="stylesheet"/>
 </head>
 
-<body class="index-page">
+<body class="<?php if (isset($page)) echo $page; ?>">
 <nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
     <div class="container">
         <div class="navbar-header">
@@ -67,7 +67,7 @@
         <div class="collapse navbar-collapse" id="navigation-index">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#" class="btn" target="_blank">
+                    <a href="gallery.php" class="btn">
                         <i class="material-icons">dashboard</i> Photo Gallery
                     </a>
                 </li>
@@ -90,7 +90,8 @@
                     </a>
                 </li>
                 <li>
-                    <button class="btn btn-raised btn-warning" rel="tooltip" title="Interested in Volunteering?" data-placement="bottom" data-toggle="modal" data-target="#volunteerModal">
+                    <button class="btn btn-raised btn-warning" rel="tooltip" title="Interested in Volunteering?"
+                            data-placement="bottom" data-toggle="modal" data-target="#volunteerModal">
                         <i class="material-icons">tag_faces</i> Volunteer Now
                     </button>
                 </li>
