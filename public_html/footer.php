@@ -86,7 +86,7 @@
 <script src="assets/js/custom.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-    $(function() {
+    $(function () {
         // the body of this function is in assets/material-kit.js
         //materialKit.initSliders();
         $(window).on('scroll', materialKit.checkScrollForTransparentNavbar);

@@ -121,15 +121,3 @@ function debounce(func, wait, immediate) {
         if (immediate && !timeout) func.apply(context, args);
     };
 };
-
-/*function gmapInit() {
-    var latlng = new google.maps.LatLng(-34.397, 150.644);
-    var myOptions = {
-        zoom: 8,
-        center: latlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById("map_canvas"),
-        myOptions);
-}
-google.maps.event.addDomListener(window, "load", gmapInit);*/
