@@ -3869,8 +3869,35 @@ h2.title {
     position: relative;
 }
 
-.gallery-page .carousel .carousel-indicators li, .carousel .carousel-indicators .active {
+.gallery-page .modal.carousel .carousel-indicators li,
+.gallery-page .modal.carousel .carousel-indicators .active {
     margin: 1px 1px;
+    opacity: 0;
+}
+
+.gallery-page .modal.carousel .modal-dialog:hover .carousel-indicators li,
+.gallery-page .modal.carousel .modal-dialog:hover .carousel-indicators .active {
+    opacity: 1;
+}
+
+.gallery-page .modal.carousel .close {
+    position: absolute;
+    background-image: none;
+    font-size: 20px;
+    width: 54px;
+    height: 54px;
+    top: 20px;
+    right: 20px;
+    line-height: 54px;
+    opacity: 1;
+    color: #000;
+    border: 2px solid #000;
+    text-align: center;
+    text-shadow: none;
+    z-index: 5;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
 }
 
 .hover-bg:hover .hover-text {
@@ -3882,7 +3909,7 @@ h2.title {
     text-align: center;
     margin: 0 auto;
     color: #ffffff;
-    background: rgba(0,0,0,0.66);
+    background: rgba(0, 0, 0, 0.66);
     padding: 25% 0;
     height: 100%;
     width: 100%;
