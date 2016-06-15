@@ -3,24 +3,24 @@
  */
 
 /* ----------------------------------------------------------- */
-/* Nob Carousel Correction
+/* Nob Three Carousel Correction
 /* ----------------------------------------------------------- */
 $('.carousel.three .item').each(function () {
     var next = $(this).next();
-
     if (!next.length) {
         next = $(this).siblings(':first');
     }
-
     next.children(':first-child').clone().appendTo($(this));
-
     if (next.next().length > 0) {
         next.next().children(':first-child').clone().appendTo($(this));
-    }
-    else {
+    } else {
         $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
     }
 });
+/* ----------------------------------------------------------- */
+/* Nob Three Carousel Correction END
+/* ----------------------------------------------------------- */
+
 
 $(document).ready(function () {
     // create a LatLng object containing the coordinate for the center of the map

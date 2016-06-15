@@ -3011,7 +3011,8 @@ h6, .h6 {
 }
 
 .modal-backdrop {
-    background: rgba(0, 0, 0, 0.3);
+    /*background: rgba(0, 0, 0, 0.3);*/
+    background: rgba(0, 0, 0, 1);
 }
 
 .modal .modal-dialog {
@@ -3025,6 +3026,14 @@ h6, .h6 {
 .modal .modal-header .close:hover, .modal .modal-header .close:focus {
     opacity: 1;
     color: #555555;
+}
+
+.modal.carousel-fit .modal-body {
+    padding: 0 !important;
+}
+
+.modal.carousel {
+    position: fixed;
 }
 
 .panel {
@@ -3761,24 +3770,6 @@ h2.title {
     margin: 10px auto 0;
 }
 
-.index-page .sub-brand {
-    margin-top: 15vh;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.index-page .sub-brand h1 {
-    font-size: 4em;
-    font-weight: 600;
-}
-
-.index-page .sub-brand h3 {
-    font-size: 1.2em;
-    text-transform: uppercase;
-    max-width: 600px;
-    margin: 10px auto 0;
-}
-
 .index-page .section-basic {
     padding-top: 15px;
 }
@@ -3846,6 +3837,53 @@ h2.title {
 .profile-page .gallery img {
     width: 100%;
     margin-bottom: 30px;
+}
+
+.gallery-page .sub-brand {
+    margin-top: 15vh;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.gallery-page .sub-brand h1 {
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.gallery-page .sub-brand h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    max-width: 600px;
+    margin: 10px auto 0;
+}
+
+.gallery-page .gallery-item {
+    margin-bottom: 30px;
+}
+
+.gallery-page .gallery-item .hover-bg {
+    position: relative;
+}
+
+.gallery-page .gallery-item .hover-bg {
+    position: relative;
+}
+
+.hover-bg:hover .hover-text {
+    opacity: 1;
+}
+
+.hover-bg .hover-text {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    background: rgba(0,0,0,0.66);
+    padding: 25% 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
 }
 
 .signup-page .wrapper > .header {

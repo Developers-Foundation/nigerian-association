@@ -7,7 +7,7 @@
  */
 
 //$page = "profile-page";
-$page = "index-page";
+$page = "gallery-page";
 include_once("header.php");
 include_once("gallery.html");
 include_once("footer.php");
