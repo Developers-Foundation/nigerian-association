@@ -71,7 +71,7 @@
 <!--   Core JS Files   -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="//maps.google.com/maps/api/js?sensor=true"></script>
+<?php if (isset($hasGmap) && $hasGmap) echo '<script src="//maps.google.com/maps/api/js?key=AIzaSyAJWaE3XJc5GQZEx5OVK7yIU44tInbavBo" async defer></script>'; ?>
 <script src="assets/js/material.min.js"></script>
 
 <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
@@ -86,7 +86,7 @@
 <script src="assets/js/custom.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-    $().ready(function () {
+    $(function() {
         // the body of this function is in assets/material-kit.js
         //materialKit.initSliders();
         $(window).on('scroll', materialKit.checkScrollForTransparentNavbar);

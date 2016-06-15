@@ -4,7 +4,7 @@
 
 /* ----------------------------------------------------------- */
 /* Nob Three Carousel Correction
-/* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */
 $('.carousel.three .item').each(function () {
     var next = $(this).next();
     if (!next.length) {
@@ -19,41 +19,43 @@ $('.carousel.three .item').each(function () {
 });
 /* ----------------------------------------------------------- */
 /* Nob Three Carousel Correction END
-/* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */
 
 
 $(document).ready(function () {
-    // create a LatLng object containing the coordinate for the center of the map
-    var latlng = new google.maps.LatLng(-33.86455, 151.209);
+    if ($('body').hasClass("index-page")) {
+        // create a LatLng object containing the coordinate for the center of the map
+        var latlng = new google.maps.LatLng(-33.86455, 151.209);
 
-    // prepare the map properties
-    var options = {
-        zoom: 15,
-        center: latlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        navigationControl: true,
-        mapTypeControl: false,
-        scrollwheel: false,
-        disableDoubleClickZoom: true
-    };
+        // prepare the map properties
+        var options = {
+            zoom: 15,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            navigationControl: true,
+            mapTypeControl: false,
+            scrollwheel: false,
+            disableDoubleClickZoom: true
+        };
 
-    // initialize the map object
-    var map = new google.maps.Map(document.getElementById('google_map'), options);
+        // initialize the map object
+        var map = new google.maps.Map(document.getElementById('google_map'), options);
 
-    // add Marker
-    var marker1 = new google.maps.Marker({
-        position: latlng, map: map
-    });
+        // add Marker
+        var marker1 = new google.maps.Marker({
+            position: latlng, map: map
+        });
 
-    // add listener for a click on the pin
-    google.maps.event.addListener(marker1, 'click', function () {
-        infowindow.open(map, marker1);
-    });
+        // add listener for a click on the pin
+        google.maps.event.addListener(marker1, 'click', function () {
+            infowindow.open(map, marker1);
+        });
 
-    // add information window
-    var infowindow = new google.maps.InfoWindow({
-        content: '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
-    });
+        // add information window
+        var infowindow = new google.maps.InfoWindow({
+            content: '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
+        });
+    }
 });
 
 /* ----------------------------------------------------------- */
@@ -132,86 +134,86 @@ $(document).ready(function () {
 });
 /* ----------------------------------------------------------- */
 /* Nob Mailer END
-/* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */
 
 /*
-(function($) {
+ (function($) {
 
-    /!* Masonry Grid *!/
-    $(document).on('add.cards change.cards', function(event) {
-        if(typeof $.fn.masonry !== 'undefined') {
-            $(event.target).outerFind('.mbr-gallery').each(function() {
-                var $msnr = $(this).find('.mbr-gallery-row').masonry({
-                    itemSelector: '.mbr-gallery-item',
-                    percentPosition: true
-                });
+ /!* Masonry Grid *!/
+ $(document).on('add.cards change.cards', function(event) {
+ if(typeof $.fn.masonry !== 'undefined') {
+ $(event.target).outerFind('.mbr-gallery').each(function() {
+ var $msnr = $(this).find('.mbr-gallery-row').masonry({
+ itemSelector: '.mbr-gallery-item',
+ percentPosition: true
+ });
 
-                // reload masonry (need for adding new or resort items)
-                $msnr.masonry('reloadItems');
+ // reload masonry (need for adding new or resort items)
+ $msnr.masonry('reloadItems');
 
-                // layout Masonry after each image loads
-                $msnr.imagesLoaded().progress(function() {
-                    $msnr.masonry('layout');
-                });
-            });
-        }
-    });
+ // layout Masonry after each image loads
+ $msnr.imagesLoaded().progress(function() {
+ $msnr.masonry('layout');
+ });
+ });
+ }
+ });
 
-    var timeout;
-    function fitLBtimeout() {
-        clearTimeout(timeout);
-        timeout = setTimeout(fitLightbox, 50);
-    }
+ var timeout;
+ function fitLBtimeout() {
+ clearTimeout(timeout);
+ timeout = setTimeout(fitLightbox, 50);
+ }
 
-    /!* Lightbox Fit *!/
-    function fitLightbox() {
-        var $lightbox = $('.mbr-gallery .modal');
-        if(!$lightbox.length) {
-            return;
-        }
+ /!* Lightbox Fit *!/
+ function fitLightbox() {
+ var $lightbox = $('.mbr-gallery .modal');
+ if(!$lightbox.length) {
+ return;
+ }
 
-        var bottomPadding = 30;
-        var wndW = $(window).width();
-        var wndH = $(window).height();
-        $lightbox.each(function() {
-            var setWidth, setTop;
-            var isShown = $(this).hasClass('in');
-            var $modalDialog = $(this).find('.modal-dialog');
-            var $currentImg = $modalDialog.find('.item.active > img');
+ var bottomPadding = 30;
+ var wndW = $(window).width();
+ var wndH = $(window).height();
+ $lightbox.each(function() {
+ var setWidth, setTop;
+ var isShown = $(this).hasClass('in');
+ var $modalDialog = $(this).find('.modal-dialog');
+ var $currentImg = $modalDialog.find('.item.active > img');
 
-            if($modalDialog.find('.item.prev > img, .item.next > img').length) {
-                $currentImg = $modalDialog.find('.item.prev > img, .item.next > img').eq(0);
-            }
+ if($modalDialog.find('.item.prev > img, .item.next > img').length) {
+ $currentImg = $modalDialog.find('.item.prev > img, .item.next > img').eq(0);
+ }
 
-            var lbW = $currentImg[0].naturalWidth;
-            var lbH = $currentImg[0].naturalHeight;
+ var lbW = $currentImg[0].naturalWidth;
+ var lbH = $currentImg[0].naturalHeight;
 
-            // height change
-            if( wndW / wndH > lbW / lbH) {
-                var needH = wndH - bottomPadding * 2;
-                setWidth = needH * lbW / lbH;
-            }
+ // height change
+ if( wndW / wndH > lbW / lbH) {
+ var needH = wndH - bottomPadding * 2;
+ setWidth = needH * lbW / lbH;
+ }
 
-            // width change
-            else {
-                setWidth = wndW - bottomPadding * 2;
-            }
+ // width change
+ else {
+ setWidth = wndW - bottomPadding * 2;
+ }
 
-            // check for maw width
-            setWidth = setWidth >= lbW ? lbW : setWidth;
+ // check for maw width
+ setWidth = setWidth >= lbW ? lbW : setWidth;
 
-            // set top to vertical center
-            setTop = (wndH - bottomPadding * 2 - setWidth * lbH / lbW) / 2;
+ // set top to vertical center
+ setTop = (wndH - bottomPadding * 2 - setWidth * lbH / lbW) / 2;
 
-            $modalDialog.css({
-                width: parseInt(setWidth),
-                top: setTop
-            });
-        });
-    }
-    // $(document).on('add.cards change.cards', fitLightbox);
-    $(window).on('resize load', fitLBtimeout);
-    $(window).on('show.bs.modal', fitLBtimeout);
-    $(window).on('slid.bs.carousel', fitLBtimeout);
+ $modalDialog.css({
+ width: parseInt(setWidth),
+ top: setTop
+ });
+ });
+ }
+ // $(document).on('add.cards change.cards', fitLightbox);
+ $(window).on('resize load', fitLBtimeout);
+ $(window).on('show.bs.modal', fitLBtimeout);
+ $(window).on('slid.bs.carousel', fitLBtimeout);
 
-}(jQuery));*/
+ }(jQuery));*/

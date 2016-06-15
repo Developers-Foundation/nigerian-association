@@ -7,6 +7,7 @@
  */
 
 $page = "index-page";
+$hasGmap = true;
 include_once("header.php");
 include_once("index2.php");
 include_once("footer.php");
