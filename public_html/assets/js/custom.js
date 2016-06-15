@@ -25,7 +25,7 @@ $('.carousel.three .item').each(function () {
 function loadedGmap() {
     if ($('body').hasClass("index-page")) {
         // create a LatLng object containing the coordinate for the center of the map
-        var latlng = new google.maps.LatLng(-33.86455, 151.209);
+        var latlng = new google.maps.LatLng(42.9843805, -81.2589267);
 
         var styleArr = [{
             "featureType": "administrative",
