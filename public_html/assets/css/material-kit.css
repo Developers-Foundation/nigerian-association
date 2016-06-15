@@ -3869,6 +3869,16 @@ h2.title {
     position: relative;
 }
 
+.gallery-page .modal.carousel .modal-dialog {
+    position: relative;
+    display: table;
+    overflow-y: auto;
+    overflow-x: auto;
+    width: 60%;
+    min-width: 300px;
+    margin: 30px auto;
+}
+
 .gallery-page .modal.carousel .carousel-indicators li,
 .gallery-page .modal.carousel .carousel-indicators .active {
     margin: 1px 1px;
