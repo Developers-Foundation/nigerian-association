@@ -3869,6 +3869,10 @@ h2.title {
     position: relative;
 }
 
+.gallery-page .carousel .carousel-indicators li, .carousel .carousel-indicators .active {
+    margin: 1px 1px;
+}
+
 .hover-bg:hover .hover-text {
     opacity: 1;
 }

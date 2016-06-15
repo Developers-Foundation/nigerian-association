@@ -134,9 +134,10 @@ $(document).ready(function () {
 /* Nob Mailer END
 /* ----------------------------------------------------------- */
 
+/*
 (function($) {
 
-    /* Masonry Grid */
+    /!* Masonry Grid *!/
     $(document).on('add.cards change.cards', function(event) {
         if(typeof $.fn.masonry !== 'undefined') {
             $(event.target).outerFind('.mbr-gallery').each(function() {
@@ -162,7 +163,7 @@ $(document).ready(function () {
         timeout = setTimeout(fitLightbox, 50);
     }
 
-    /* Lightbox Fit */
+    /!* Lightbox Fit *!/
     function fitLightbox() {
         var $lightbox = $('.mbr-gallery .modal');
         if(!$lightbox.length) {
@@ -213,4 +214,4 @@ $(document).ready(function () {
     $(window).on('show.bs.modal', fitLBtimeout);
     $(window).on('slid.bs.carousel', fitLBtimeout);
 
-}(jQuery));
+}(jQuery));*/
