@@ -3870,13 +3870,14 @@ h2.title {
 }
 
 .gallery-page .modal.carousel .modal-dialog {
-    position: relative;
+    /*position: relative;
     display: table;
     overflow-y: auto;
     overflow-x: auto;
-    width: 60%;
+    width: auto;
     min-width: 300px;
-    margin: 30px auto;
+    margin: 30px auto;*/
+    max-height: none;
 }
 
 .gallery-page .modal.carousel .carousel-indicators li,
