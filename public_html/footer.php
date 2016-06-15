@@ -71,7 +71,7 @@
 <!--   Core JS Files   -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-<?php if (isset($hasGmap) && $hasGmap) echo '<script src="//maps.google.com/maps/api/js?key=AIzaSyAJWaE3XJc5GQZEx5OVK7yIU44tInbavBo" async defer></script>'; ?>
+<?php if (isset($hasGmap) && $hasGmap) echo '<script src="//maps.google.com/maps/api/js?key=AIzaSyAJWaE3XJc5GQZEx5OVK7yIU44tInbavBo&callback=loadedGmap" async defer></script>'; ?>
 <script src="assets/js/material.min.js"></script>
 
 <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
