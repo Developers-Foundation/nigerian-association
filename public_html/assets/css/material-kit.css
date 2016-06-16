@@ -3942,7 +3942,8 @@ h2.title {
 .landing-page .navbar-transparent,
 .profile-page .navbar-transparent,
 .signup-page .navbar-transparent,
-.index-page .navbar-transparent {
+.index-page .navbar-transparent,
+.gallery-page .navbar-transparent {
     padding-top: 25px;
 }
 
