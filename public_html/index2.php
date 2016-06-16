@@ -171,6 +171,12 @@
                                             </a>
 
                                         </li>
+                                        <li>
+                                            <a href="#item4" data-toggle="tab">
+                                                <i class="material-icons">chat</i>
+                                                Job Opportunities
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -204,7 +210,11 @@
                                         <p>February 1995, A good year</p></a>
                                 </div>
                                 <div class="tab-pane" id="item3">
-                                    <h3>Visit this page for our gallery.</h3>
+                                    <a href="gallery.php"><h3>Visit this page for our gallery.</h3></a>
+                                </div>
+                                <div class="tab-pane" id="item4">
+                                    <h3>Job Opportunities from Acofola</h3>
+                                    <div id="job-opportunities"></div>
                                 </div>
                             </div>
                         </div>
