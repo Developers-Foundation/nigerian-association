@@ -162,9 +162,3 @@ $(document).ready(function () {
 /* ----------------------------------------------------------- */
 /* Nob Mailer END
 /* ----------------------------------------------------------- */
-
-$(document).ready(function() {
-    if ($('body').hasClass('index-page')) {
-        $('#job-opportunities').load('http://www.acfola.ca/career/ #content');
-    }
-});

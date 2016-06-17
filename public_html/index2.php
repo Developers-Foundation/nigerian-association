@@ -47,6 +47,7 @@
                                 -webkit-transform: translate3d(33%, 0, 0);
                                 transform: translate3d(33%, 0, 0);
                             }
+
                             .carousel-inner > .item.prev,
                             .carousel-inner > .item.active.left {
                                 left: 0;
@@ -213,8 +214,16 @@
                                     <a href="gallery.php"><h3>Visit this page for our gallery.</h3></a>
                                 </div>
                                 <div class="tab-pane" id="item4">
-                                    <h3>Job Opportunities from Acofola</h3>
-                                    <div id="job-opportunities"></div>
+                                    <a href="http://www.acfola.ca/career/"><h3>Job Opportunities from Acofola</h3></a>
+                                    <div id="job-opportunities">
+                                        <?php
+                                        /*$page = new DomDocument;
+                                        $page->validateOnParse = true;
+                                        $page->loadHtml(file_get_contents('http://www.acfola.ca/career/'));
+
+                                        echo $page->getElementById('content');*/
+                                        ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
