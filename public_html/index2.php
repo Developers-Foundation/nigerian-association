@@ -72,7 +72,7 @@
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">location_on</i> 1</h4>
+                                                <h4><i class="material-icons">people</i> John Doe</h4>
                                             </div>
                                         </a></div>
                                 </div>
@@ -81,7 +81,7 @@
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">location_on</i> 2</h4>
+                                                <h4><i class="material-icons">people_outline</i> John Doe</h4>
                                             </div>
                                         </a>
                                     </div>
@@ -91,7 +91,7 @@
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">location_on</i> 3</h4>
+                                                <h4><i class="material-icons">portrait</i> John Doe</h4>
                                             </div>
                                         </a>
                                     </div>
@@ -101,7 +101,7 @@
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">location_on</i> 4</h4>
+                                                <h4><i class="material-icons">tag_face</i> John Doe</h4>
                                             </div>
                                         </a>
                                     </div>
@@ -111,7 +111,7 @@
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">location_on</i> 5</h4>
+                                                <h4><i class="material-icons">airline_seat_individual_suite</i> John Doe</h4>
                                             </div>
                                         </a>
                                     </div>
@@ -121,7 +121,7 @@
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">location_on</i> 6</h4>
+                                                <h4><i class="material-icons">mood</i> John Doe</h4>
                                             </div>
                                         </a>
                                     </div>
@@ -233,7 +233,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section suggestion-section header-filter" style="background-image: url(assets/img/bg3.jpeg);">
         <div class="container">
             <div class="title">
                 <h2>Give a Suggestion</h2>

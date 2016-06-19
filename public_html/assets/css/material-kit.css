@@ -1262,6 +1262,24 @@ output {
     font-weight: 400;
 }
 
+.form-email .form-control::-moz-placeholder,
+.form-email .form-group .form-control::-moz-placeholder {
+    color: #555;
+    font-weight: 400;
+}
+
+.form-email .form-control:-ms-input-placeholder,
+.form-email .form-group .form-control:-ms-input-placeholder {
+    color: #555;
+    font-weight: 400;
+}
+
+.form-email .form-control::-webkit-input-placeholder,
+.form-email .form-group .form-control::-webkit-input-placeholder {
+    color: #555;
+    font-weight: 400;
+}
+
 .form-control[readonly], .form-control[disabled], fieldset[disabled] .form-control,
 .form-group .form-control[readonly],
 .form-group .form-control[disabled], fieldset[disabled]
@@ -3780,6 +3798,13 @@ h2.title {
     background: linear-gradient(45deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
     background: -moz-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
     background: -webkit-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+}
+
+.index-page .suggestion-section.header-filter:after {
+    background: rgba(255, 255, 255, 0.64);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.45) 100%);
+    background: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.45) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.45) 100%);
 }
 
 .landing-page .header {
