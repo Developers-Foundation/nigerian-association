@@ -1,5 +1,37 @@
-<div class="header " style="background-image: url('assets/img/bg6.jpg');">
-    <div class="container">
+<div class="header carousel slide" style="" id="title-carousel">
+    <div class="carousel-inner">
+        <div class="item">
+            <a href="#">
+                <img src="assets/img/bg6.jpg" class="img-responsive">
+                <div class="carousel-caption">
+                    <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="assets/img/bg6.jpg" class="img-responsive">
+                <div class="carousel-caption">
+                    <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
+                </div>
+            </a>
+        </div>
+        <div class="item active">
+            <a href="#">
+                <img src="assets/img/bg6.jpg" class="img-responsive">
+                <div class="carousel-caption">
+                    <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--<a class="left carousel-control" href="#teamCarousel" data-slide="prev">
+        <i class="material-icons black-icon">keyboard_arrow_left</i>
+    </a>
+    <a class="right carousel-control" href="#teamCarousel" data-slide="next">
+        <i class="material-icons black-icon">keyboard_arrow_right</i>
+    </a>-->
+    <div class="container" id="title-overlay">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="brand">
@@ -40,7 +72,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <style> /* TODO: MOVE THIS TO STYLESHEET */
-                        @media all and (transform-3d), (-webkit-transform-3d) {
+                        /*@media all and (transform-3d), (-webkit-transform-3d) {
                             .carousel-inner > .item.next,
                             .carousel-inner > .item.active.right {
                                 left: 0;
@@ -54,7 +86,7 @@
                                 -webkit-transform: translate3d(-33%, 0, 0);
                                 transform: translate3d(-33%, 0, 0);
                             }
-                        }
+                        }*/
                     </style>
                     <div class="card card-carousel">
                         <div class="carousel slide three" id="teamCarousel" data-ride="carousel">
@@ -111,7 +143,8 @@
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">airline_seat_individual_suite</i> John Doe</h4>
+                                                <h4><i class="material-icons">airline_seat_individual_suite</i> John Doe
+                                                </h4>
                                             </div>
                                         </a>
                                     </div>
@@ -233,7 +266,8 @@
         </div>
     </div>
 
-    <div class="section suggestion-section header-filter" style="width: 100% background-image: url(assets/img/bg3.jpeg) ;">
+    <div class="section suggestion-section header-filter"
+         style="width: 100% background-image: url(assets/img/bg3.jpeg) ;">
         <div class="container">
             <div class="title">
                 <h2><strong>Give a Suggestion</strong></h2>

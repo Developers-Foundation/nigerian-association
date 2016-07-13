@@ -3791,6 +3791,12 @@ h2.title {
     height: 90vh;
 }
 
+.index-page #title-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .index-page .brand {
     margin-top: 30vh;
     color: #FFFFFF;
