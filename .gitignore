@@ -15,6 +15,7 @@ composer.phar
 .idea/tasks.xml
 .idea/dictionaries
 .idea/vcs.xml
+.idea/misc.xml
 .idea/jsLibraryMappings.xml
 
 # Sensitive or high-churn files:

@@ -1,4 +1,4 @@
-<div class="header header-filter" style="background-image: url('assets/img/bg5.jpg');">
+<div class="header " style="background-image: url('assets/img/bg6.jpg');">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -15,7 +15,7 @@
     <div class="section">
         <div class="container">
             <div class="title">
-                <h2>Who We Are</h2>
+                <h2><strong>Who We Are</strong></h2>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -35,7 +35,7 @@
     <div class="section" style="background-image: url('assets/img/city.jpg')">
         <div class="container">
             <div class="title">
-                <h2>Our Team</h2>
+                <h2><Strong>Our Team</Strong></h2>
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -142,7 +142,7 @@
     <div class="section">
         <div class="container">
             <div class="title">
-                <h2>What We Do</h2>
+                <h2><strong>What We Do</strong></h2>
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -153,26 +153,26 @@
                             <div class="nav-tabs-navigation">
                                 <div class="nav-tabs-wrapper">
                                     <ul class="nav nav-pills" data-tabs="tabs">
-                                        <li class="active">
+                                        <li class="active" style="width: 25%">
                                             <a href="#item1" data-toggle="tab">
                                                 <i class="material-icons">face</i>
                                                 Inaugural Meet & Greet
                                             </a>
                                         </li>
-                                        <li>
+                                        <li style="width: 25%">
                                             <a href="#item2" data-toggle="tab">
                                                 <i class="material-icons">chat</i>
                                                 Blasts from the Past
                                             </a>
                                         </li>
-                                        <li>
+                                        <li style="width: 25%">
                                             <a href="#item3" data-toggle="tab">
                                                 <i class="material-icons">photo_camera</i>
                                                 Gallery
                                             </a>
 
                                         </li>
-                                        <li>
+                                        <li style="width: 25%">
                                             <a href="#item4" data-toggle="tab">
                                                 <i class="material-icons">chat</i>
                                                 Job Opportunities
@@ -233,10 +233,10 @@
         </div>
     </div>
 
-    <div class="section suggestion-section header-filter" style="background-image: url(assets/img/bg3.jpeg);">
+    <div class="section suggestion-section header-filter" style="width: 100% background-image: url(assets/img/bg3.jpeg) ;">
         <div class="container">
             <div class="title">
-                <h2>Give a Suggestion</h2>
+                <h2><strong>Give a Suggestion</strong></h2>
                 <small>Do you have useful suggestion(s) for us or do you think you do?</small>
                 <small>If yes, please tell us below. We like to hear from you.</small>
             </div>
@@ -261,7 +261,7 @@
                                       rows="5"></textarea>
                     </div>
                     <div class="col-md-12 text-center">
-                        <button class="btn btn-raised btn-primary btn-lg">Send</button>
+                        <button class="btn btn-raised btn-success btn-lg">Send</button>
                     </div>
                 </form>
             </div>
@@ -271,7 +271,7 @@
     <div class="section">
         <div class="container">
             <div class="title">
-                <h2>Find Us Here</h2>
+                <h2><strong>Find Us Here</strong></h2>
                 <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis elementum est.
                     Vestibulum nec orci eu ipsum imperdiet mattis.
                 </small>
