@@ -103,7 +103,7 @@ $(document).ready(function () {
         if (thisForm.attr('data-form-type').indexOf("nob") > -1) {
             // Nob form
             var sendFrom = emailField.val(),
-                sendTo = "harrisonchowhk@yahoo.com",
+                sendTo = "michael511.mp@gmail.com", //TODO: Make sure to change it to their email later!!!
                 subject = "Message from " + nameField.val(),
                 msg = messageField.val(),
                 msgHTML = "<p>" + messageField.val() + "<p>",
@@ -162,3 +162,78 @@ $(document).ready(function () {
 /* ----------------------------------------------------------- */
 /* Nob Mailer END
 /* ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- */
+/* Nob Mailer volunteer BEGIN TODO: You need to make this one efficient by combining original email and this volunteer
+/* ----------------------------------------------------------- */
+$(document).ready(function () {
+    $('form.form-volunteer').submit(function (e) {
+        if (e.preventDefault) e.preventDefault();
+        else e.returnValue = false;
+
+        var thisForm = $(this).closest('form.form-volunteer');
+        var submitButton = thisForm.find('button');
+        submitButton.prop("disabled", true);
+        var emailField = thisForm.find('.form-input-email');
+        var nameField = thisForm.find('.form-input-name');
+        var messageField = thisForm.find('.form-input-message');
+
+        if (thisForm.attr('data-form-type').indexOf("nob") > -1) {
+            // Nob form
+            var sendFrom = emailField.val(),
+                sendTo = "michael511.mp@gmail.com", //TODO: Make sure to change it to their email later!!!
+                subject = "Volunteering Message from " + nameField.val(), //TODO: This is what I changed from e-mail ver
+                msg = messageField.val(),
+                msgHTML = "<p>" + messageField.val() + "<p>",
+                fromName = nameField.val(),
+                toName = "Nigerian Association of London and Area";
+
+            var sendData = JSON.stringify({
+                'sendFrom': sendFrom,
+                'fromName': fromName,
+                'sendTo': sendTo,
+                'toName': toName,
+                'subject': subject,
+                'msg': msg,
+                'msgHTML': msgHTML
+            });
+
+            $.ajax({
+                url: 'assets/mail/mailer.php',
+                crossDomain: false,
+                data: sendData,
+                method: "POST",
+                cache: false,
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                success: function (data) {
+                    // Deal with JSON
+                    console.log(data);
+                    var returnData = data;
+                    submitButton.removeClass("btn-primary");
+                    if (returnData.success) {
+                        // Throw success msg
+                        emailField.val("");
+                        nameField.val("");
+                        messageField.val("");
+                        submitButton.html("Received");
+                        submitButton.addClass("btn-success");
+                    } else {
+                        // Throw error message
+                        submitButton.html("Sorry an error occured");
+                        submitButton.addClass("btn-danger");
+                    }
+                    submitButton.prop("disabled", false);
+                },
+                error: function (error) {
+                    console.log(error);
+                    // Throw error message
+                    submitButton.html("Sorry an error occured");
+                    submitButton.removeClass("btn-primary");
+                    submitButton.addClass("btn-danger");
+                    submitButton.prop("disabled", false);
+                }
+            });
+        }
+    });
+});

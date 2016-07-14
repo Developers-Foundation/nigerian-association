@@ -1,28 +1,34 @@
-<div class="header carousel slide" style="" id="title-carousel">
+<div class="header header-filter carousel slide" style="" id="title-carousel">
     <div class="carousel-inner">
         <div class="item">
-            <a href="#">
-                <img src="assets/img/bg6.jpg" class="img-responsive">
+                <img src="assets/img/bg.jpg" class="img-responsive">
                 <div class="carousel-caption">
                     <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
                 </div>
-            </a>
         </div>
         <div class="item">
-            <a href="#">
-                <img src="assets/img/bg6.jpg" class="img-responsive">
+                <img src="assets/img/bg2.jpeg" class="img-responsive">
                 <div class="carousel-caption">
                     <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
                 </div>
-            </a>
+        </div>
+        <div class="item">
+                <img src="assets/img/bg3.jpeg" class="img-responsive">
+                <div class="carousel-caption">
+                    <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
+                </div>
+        </div>
+        <div class="item">
+                <img src="assets/img/bg4.jpeg" class="img-responsive">
+                <div class="carousel-caption">
+                    <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
+                </div>
         </div>
         <div class="item active">
-            <a href="#">
                 <img src="assets/img/bg6.jpg" class="img-responsive">
                 <div class="carousel-caption">
                     <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
                 </div>
-            </a>
         </div>
     </div>
     <!--<a class="left carousel-control" href="#teamCarousel" data-slide="prev">
@@ -306,8 +312,7 @@
         <div class="container">
             <div class="title">
                 <h2><strong>Find Us Here</strong></h2>
-                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis elementum est.
-                    Vestibulum nec orci eu ipsum imperdiet mattis.
+                <small>London, Ontario, Canada
                 </small>
             </div>
         </div>

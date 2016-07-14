@@ -46,20 +46,37 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                     <i class="material-icons">clear</i>
                 </button>
-                <h4 class="modal-title">Modal title</h4>
+                <h4 class="modal-title">Volunteer</h4>
             </div>
             <div class="modal-body">
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                    language ocean. A small river named Duden flows by their place and supplies it with the necessary
-                    regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                    Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
-                    life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the
-                    far World of Grammar.
-                </p>
+                <p>If you are interested in volunteering your time to set up the new Nigeria Association of London and Area, please complete the form below and we will get back to you. Thank you.</p>
+                <div class="row">
+                    <form class="form-volunteer" action="" method="post" data-form-type="nob">
+                        <div class="col-md-6 left">
+                            <div class="input-group">
+		                    <span class="input-group-addon">
+			                    <i class="fa fa-user"></i>
+		                    </span>
+                                <input type="text" class="form-control form-input-name" placeholder="Your Name">
+                            </div>
+                            <div class="input-group">
+		                    <span class="input-group-addon">
+			                    <i class="fa fa-envelope"></i>
+		                    </span>
+                                <input type="text" class="form-control form-input-email" placeholder="Your Email">
+                            </div>
+                        </div>
+                        <div class="col-md-6 right">
+                            <textarea class="form-control form-input-message" placeholder="What can you do for us?"
+                                      rows="5"></textarea>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button class="btn btn-raised btn-success btn-lg">Send</button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-simple">Nice Button</button>
                 <button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Close</button>
             </div>
         </div>
