@@ -55,8 +55,8 @@
         <div class="container">
             <div class="title">
                 <h2><strong>Who We Are</strong></h2>
-
             </div>
+            <hr>
             <div class="row">
                 <div class="col-md-4">
                     <img src="assets/img/photos/01.jpg" class="img-responsive">
@@ -72,6 +72,7 @@
                     <p><i class="fa fa-dot-circle-o"></i> The <strong>IMT</strong> then convened a Special General Meeting on August 8, 2015 where New Officers were
                         elected and the <strong>IMT</strong> handed over to the new team.</p>
                 </div>
+
             </div>
         </div>
     </div>
