@@ -34,6 +34,10 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
     line-height: 1.5em;
 }
 
+.text-center {
+    text-align: center;
+}
+
 a, a:hover, a:focus {
     /*color: #9c27b0;*/
     color:#46a149;
@@ -3826,10 +3830,12 @@ h2.title {
 }
 */
 .index-page .suggestion-section.header-filter:after {
-    background: rgba(255, 255, 255, 0.64);
+    background: rgba(255, 255, 255, 0.8);
+    /*
     background: linear-gradient(45deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.45) 100%);
     background: -moz-linear-gradient(135deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.45) 100%);
     background: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.45) 100%);
+    */
 }
 
 .landing-page .header {
@@ -4016,5 +4022,20 @@ h2.title {
     .main-raised {
         margin-left: 10px;
         margin-right: 10px;
+    }
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-inner > .item.next,
+    .carousel-inner > .item.active.right {
+        left: 0;
+        -webkit-transform: translate3d(33%, 0, 0);
+        transform: translate3d(33%, 0, 0);
+    }
+
+    .carousel-inner > .item.prev,
+    .carousel-inner > .item.active.left {
+        left: 0;
+        -webkit-transform: translate3d(-33%, 0, 0);
+        transform: translate3d(-33%, 0, 0);
     }
 }

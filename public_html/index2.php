@@ -1,31 +1,32 @@
-<div class="header header-filter carousel slide" style="" id="title-carousel">
+<div class="header header-filter carousel slide" style="" id="title-carousel" xmlns="http://www.w3.org/1999/html"
+     xmlns="http://www.w3.org/1999/html">
     <div class="carousel-inner">
         <div class="item">
-                <img src="assets/img/bg.jpg" class="img-responsive">
+                <img src="assets/img/bg.jpg" style="width: 100%;" class="img-responsive">
                 <div class="carousel-caption">
                     <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
                 </div>
         </div>
         <div class="item">
-                <img src="assets/img/bg2.jpeg" class="img-responsive">
+                <img src="assets/img/bg2.jpeg" style="width: 100%;" class="img-responsive">
                 <div class="carousel-caption">
                     <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
                 </div>
         </div>
         <div class="item">
-                <img src="assets/img/bg3.jpeg" class="img-responsive">
+                <img src="assets/img/bg3.jpeg" style="width: 100%;" class="img-responsive">
                 <div class="carousel-caption">
                     <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
                 </div>
         </div>
         <div class="item">
-                <img src="assets/img/bg4.jpeg" class="img-responsive">
+                <img src="assets/img/bg4.jpeg" style="width: 100%;" class="img-responsive">
                 <div class="carousel-caption">
                     <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
                 </div>
         </div>
         <div class="item active">
-                <img src="assets/img/bg6.jpg" class="img-responsive">
+                <img src="assets/img/bg6.jpg" style="width: 100%;" class="img-responsive">
                 <div class="carousel-caption">
                     <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
                 </div>
@@ -54,18 +55,22 @@
         <div class="container">
             <div class="title">
                 <h2><strong>Who We Are</strong></h2>
+
             </div>
             <div class="row">
                 <div class="col-md-4">
                     <img src="assets/img/photos/01.jpg" class="img-responsive">
                 </div>
                 <div class="col-md-8">
-                    <p>The Nigerian Association of London and Area (NALA) is a community of Londoners of Nigerian
+                    </br>
+                    </br>
+                    </br>
+                    <p><i class="fa fa-dot-circle-o"></i> <strong>The Nigerian Association of London and Area (NALA)</strong> is a community of Londoners of Nigerian
                         descent.</p>
-                    <p>The new NALA is preceded by a similar organization that existed until the 90s. The Nigerian
-                        community met on March 7, 2015 where the Interim Management Team (IMT) was formed.</p>
-                    <p>The IMT then convened a Special General Meeting on August 8, 2015 where New Officers were
-                        elected and the IMT handed over to the new team.</p>
+                    <p><i class="fa fa-dot-circle-o"></i> The new <strong>NALA</strong> is preceded by a similar organization that existed until the 90s. The Nigerian
+                        community met on March 7, 2015 where the <strong>Interim Management Team (IMT)</strong> was formed.</p>
+                    <p><i class="fa fa-dot-circle-o"></i> The <strong>IMT</strong> then convened a Special General Meeting on August 8, 2015 where New Officers were
+                        elected and the <strong>IMT</strong> handed over to the new team.</p>
                 </div>
             </div>
         </div>
@@ -77,23 +82,6 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <style> /* TODO: MOVE THIS TO STYLESHEET */
-                        /*@media all and (transform-3d), (-webkit-transform-3d) {
-                            .carousel-inner > .item.next,
-                            .carousel-inner > .item.active.right {
-                                left: 0;
-                                -webkit-transform: translate3d(33%, 0, 0);
-                                transform: translate3d(33%, 0, 0);
-                            }
-
-                            .carousel-inner > .item.prev,
-                            .carousel-inner > .item.active.left {
-                                left: 0;
-                                -webkit-transform: translate3d(-33%, 0, 0);
-                                transform: translate3d(-33%, 0, 0);
-                            }
-                        }*/
-                    </style>
                     <div class="card card-carousel">
                         <div class="carousel slide three" id="teamCarousel" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -178,6 +166,7 @@
             </div>
         </div>
     </div>
+
     <div class="section">
         <div class="container">
             <div class="title">
@@ -272,11 +261,10 @@
         </div>
     </div>
 
-    <div class="section suggestion-section header-filter"
-         style="width: 100% background-image: url(assets/img/bg3.jpeg) ;">
+    <div class="section suggestion-section header-filter" style="width: 100%; background-image: url(assets/img/city1.jpg) ;">
         <div class="container">
-            <div class="title">
-                <h2><strong>Give a Suggestion</strong></h2>
+            <div class="title text-center">
+                <h2><strong>Contact Us</strong></h2>
                 <small>Do you have useful suggestion(s) for us or do you think you do?</small>
                 <small>If yes, please tell us below. We like to hear from you.</small>
             </div>
@@ -310,7 +298,7 @@
 
     <div class="section">
         <div class="container">
-            <div class="title">
+            <div class="title text-center">
                 <h2><strong>Find Us Here</strong></h2>
                 <small>London, Ontario, Canada
                 </small>
