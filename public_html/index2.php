@@ -61,7 +61,6 @@
                 <div class="col-md-4">
                     <img src="assets/img/photos/01.jpg" class="img-responsive">
                 </div>
-                <hr>
                 <div class="col-md-8">
                     </br>
                     </br>
