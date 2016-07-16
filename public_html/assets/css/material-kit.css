@@ -3693,13 +3693,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
      color: #3C4858;
  }
 
-hr{
-    border-color: #008000;
-    border-width: 4px;
-    width: 95%;
-    clear: both;
-}
-
 h2.title {
     margin-bottom: 30px;
 }
@@ -4045,4 +4038,11 @@ h2.title {
         -webkit-transform: translate3d(-33%, 0, 0);
         transform: translate3d(-33%, 0, 0);
     }
+}
+
+hr{
+    border-color: #008000;
+    border-width: 4px;
+    width: 95%;
+    clear: both;
 }
