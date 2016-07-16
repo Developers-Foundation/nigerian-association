@@ -3689,9 +3689,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 .title {
-    font-weight: 500;
-    color: #3C4858;
-}
+     font-weight: 500;
+     color: #3C4858;
+ }
 
 h2.title {
     margin-bottom: 30px;
@@ -4038,4 +4038,11 @@ h2.title {
         -webkit-transform: translate3d(-33%, 0, 0);
         transform: translate3d(-33%, 0, 0);
     }
+}
+
+hr{
+    border-color: #008000;
+    border-width: 4px;
+    width: 95%;
+    clear: both;
 }
