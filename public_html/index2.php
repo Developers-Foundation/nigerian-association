@@ -65,12 +65,12 @@
                     </br>
                     </br>
                     </br>
-                    <p><i class="fa fa-dot-circle-o"></i> <strong>The Nigerian Association of London and Area (NALA)</strong> is a community of Londoners of Nigerian
+                    <p><i class="fa fa-dot-circle-o"></i> The Nigerian Association of London and Area (NALA) is a community of Londoners of Nigerian
                         descent.</p>
-                    <p><i class="fa fa-dot-circle-o"></i> The new <strong>NALA</strong> is preceded by a similar organization that existed until the 90s. The Nigerian
-                        community met on March 7, 2015 where the <strong>Interim Management Team (IMT)</strong> was formed.</p>
-                    <p><i class="fa fa-dot-circle-o"></i> The <strong>IMT</strong> then convened a Special General Meeting on August 8, 2015 where New Officers were
-                        elected and the <strong>IMT</strong> handed over to the new team.</p>
+                    <p><i class="fa fa-dot-circle-o"></i> The new NALA is preceded by a similar organization that existed until the 90s. The Nigerian
+                        community met on March 7, 2015 where the Interim Management Team (IMT)was formed.</p>
+                    <p><i class="fa fa-dot-circle-o"></i> The IMT then convened a Special General Meeting on August 8, 2015 where New Officers were
+                        elected and the IMT handed over to the new team.</p>
                 </div>
 
             </div>
@@ -81,6 +81,7 @@
             <div class="title">
                 <h2><Strong>Our Team</Strong></h2>
             </div>
+            <hr>
             <div class="row">
                 <div class="col-md-12">
                     <div class="card card-carousel">
@@ -173,6 +174,7 @@
             <div class="title">
                 <h2><strong>What We Do</strong></h2>
             </div>
+            <hr>
             <div class="row">
                 <div class="col-md-12">
                     <div class="card card-nav-tabs">
@@ -266,6 +268,7 @@
         <div class="container">
             <div class="title text-center">
                 <h2><strong>Contact Us</strong></h2>
+                <hr>
                 <small>Do you have useful suggestion(s) for us or do you think you do?</small>
                 <small>If yes, please tell us below. We like to hear from you.</small>
             </div>
@@ -301,8 +304,7 @@
         <div class="container">
             <div class="title text-center">
                 <h2><strong>Find Us Here</strong></h2>
-                <small>London, Ontario, Canada
-                </small>
+                <hr>
             </div>
         </div>
         <div id="google_map"></div>
