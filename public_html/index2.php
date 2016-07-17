@@ -64,7 +64,6 @@
                 <div class="col-md-8">
                     </br>
                     </br>
-                    </br>
                     <p><i class="fa fa-dot-circle-o"></i> The Nigerian Association of London and Area (NALA) is a community of Londoners of Nigerian
                         descent.</p>
                     <p><i class="fa fa-dot-circle-o"></i> The new NALA is preceded by a similar organization that existed until the 90s. The Nigerian
