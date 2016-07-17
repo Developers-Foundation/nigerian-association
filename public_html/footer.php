@@ -2,6 +2,7 @@
     <div class="container">
         <nav class="pull-left">
             <ul>
+                <!-- TODO: Left it like this so you can decide that to do with it.
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -15,6 +16,7 @@
                     <a href="#">Blog</a>
                 </li>
             </ul>
+            -->
         </nav>
         <div class="social-area pull-right">
             <a href="link.php?link=facebook" class="btn btn-social btn-facebook btn-simple">
@@ -31,7 +33,7 @@
             </a>
         </div>
         <div class="copyright">
-            &copy; 2016 <a href="link.php?link=dev">Developers' Foundation</a>, made with love
+            <p>Copyright &copy; 2016. <a href="link.php?link=dev">Developers' Foundation</a>. All rights reserved.</p>
         </div>
     </div>
 </footer>
