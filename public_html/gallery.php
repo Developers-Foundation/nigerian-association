@@ -9,5 +9,5 @@
 //$page = "profile-page";
 $page = "gallery-page";
 include_once("header.php");
-include_once("gallery.html");
+include_once("gallery2.php");
 include_once("footer.php");

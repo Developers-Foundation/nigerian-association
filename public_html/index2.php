@@ -1,6 +1,6 @@
 <div class="header header-filter carousel slide" style="" id="title-carousel" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html">
-    <div class="carousel-inner">
+    <div class="carousel-inner title-carousel" >
         <div class="item">
                 <img src="assets/img/bg.jpg" style="width: 100%;" class="img-responsive">
                 <div class="carousel-caption">

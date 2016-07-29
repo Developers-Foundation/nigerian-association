@@ -200,6 +200,13 @@
             <div class="modal-body">
                 <ol class="carousel-indicators">
                     <li data-target="#nob-lb-gallery" data-slide-to="0" class="active"></li>
+                    <?php
+                    for ($i = 1; $i < 12; $i++) {
+                        echo '<li data-target="#nob-lb-gallery" data-slide-to="' . $i . '" class=""></li>';
+                    }
+                    ?>
+                    <!--
+                    <li data-target="#nob-lb-gallery" data-slide-to="0" class="active"></li>
                     <li data-target="#nob-lb-gallery" data-slide-to="1" class=""></li>
                     <li data-target="#nob-lb-gallery" data-slide-to="2" class=""></li>
                     <li data-target="#nob-lb-gallery" data-slide-to="3" class=""></li>
@@ -210,9 +217,18 @@
                     <li data-target="#nob-lb-gallery" data-slide-to="8" class=""></li>
                     <li data-target="#nob-lb-gallery" data-slide-to="9" class=""></li>
                     <li data-target="#nob-lb-gallery" data-slide-to="10" class=""></li>
-                    <li data-target="#nob-lb-gallery" data-slide-to="11" class=""></li>
+                    <li data-target="#nob-lb-gallery" data-slide-to="11" class=""></li>-->
                 </ol>
                 <div class="carousel-inner">
+                    <div class="item active">
+                        <img alt="" src="assets/img/gallery/P1000850-1024x768.jpg">
+                    </div>
+                    <?php
+                    for ($i = 1; $i < 12; $i++) {
+                        echo '<div class="item"><img alt="" src="assets/img/gallery/P' . (1000850+$i) . '-1024x768.jpg"></div>';
+                    }
+                    ?>
+                    <!--
                     <div class="item">
                         <img alt="" src="assets/img/gallery/P1000850-1024x768.jpg">
                     </div>
@@ -248,7 +264,7 @@
                     </div>
                     <div class="item">
                         <img alt="" src="assets/img/gallery/P1000861-1024x768.jpg">
-                    </div>
+                    </div>-->
                 </div>
                 <a class="close" href="#" role="button" data-dismiss="modal">
                     <i class="fa fa-times" aria-hidden="true"></i>
