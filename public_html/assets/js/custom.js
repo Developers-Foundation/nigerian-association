@@ -336,7 +336,7 @@ $(document).ready(function() {
                 $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
             }
         });
-    };
+    });
 });
 /* ----------------------------------------------------------- */
 /* Nob API END
