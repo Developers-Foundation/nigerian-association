@@ -237,3 +237,26 @@ $(document).ready(function () {
         }
     });
 });
+
+/* ----------------------------------------------------------- */
+/* Nob API START
+/* ----------------------------------------------------------- */
+Parse.initialize("developers-foundation-db");
+Parse.serverURL = 'https://developers-foundation-db.herokuapp.com/parse';
+
+var Website = Parse.Object.extend("Website");
+var query = new Parse.Query(Website);
+query.equalTo("nickname", "Nigerian");
+query.first({
+  success: function(obj) {
+    // The object was retrieved successfully.
+    console.log(obj);
+  },
+  error: function(object, error) {
+    // The object was not retrieved successfully.
+    // error is a Parse.Error with an error code and message.
+  }
+});
+/* ----------------------------------------------------------- */
+/* Nob API END
+/* ----------------------------------------------------------- */
