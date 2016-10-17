@@ -1,11 +1,10 @@
 /**
  * Created by harrisonchow on 6/6/16.
  */
-
 /* ----------------------------------------------------------- */
 /* Nob Three Carousel Correction
  /* ----------------------------------------------------------- */
-$('.carousel.three .item').each(function () {
+/*$('.carousel.three .item').each(function () {
     var next = $(this).next();
     if (!next.length) {
         next = $(this).siblings(':first');
@@ -16,12 +15,10 @@ $('.carousel.three .item').each(function () {
     } else {
         $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
     }
-});
+});*/
 /* ----------------------------------------------------------- */
 /* Nob Three Carousel Correction END
  /* ----------------------------------------------------------- */
-
-
 function loadedGmap() {
     if ($('body').hasClass("index-page")) {
         // create a LatLng object containing the coordinate for the center of the map
@@ -30,28 +27,56 @@ function loadedGmap() {
         var styleArr = [{
             "featureType": "administrative",
             "elementType": "labels.text.fill",
-            "stylers": [{"color": "#444444"}]
-        }, {"featureType": "landscape", "elementType": "all", "stylers": [{"color": "#f2f2f2"}]}, {
+            "stylers": [{
+                "color": "#444444"
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [{
+                "color": "#f2f2f2"
+            }]
+        }, {
             "featureType": "poi",
             "elementType": "all",
-            "stylers": [{"visibility": "off"}]
+            "stylers": [{
+                "visibility": "off"
+            }]
         }, {
             "featureType": "road",
             "elementType": "all",
-            "stylers": [{"saturation": -100}, {"lightness": 45}]
+            "stylers": [{
+                "saturation": -100
+            }, {
+                "lightness": 45
+            }]
         }, {
             "featureType": "road.highway",
             "elementType": "all",
-            "stylers": [{"visibility": "simplified"}]
+            "stylers": [{
+                "visibility": "simplified"
+            }]
         }, {
             "featureType": "road.arterial",
             "elementType": "labels.icon",
-            "stylers": [{"visibility": "off"}]
+            "stylers": [{
+                "visibility": "off"
+            }]
         }, {
             "featureType": "transit",
             "elementType": "all",
-            "stylers": [{"visibility": "off"}]
-        }, {"featureType": "water", "elementType": "all", "stylers": [{"color": "#e3e3fb"}, {"visibility": "on"}]}];
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [{
+                "color": "#e3e3fb"
+            }, {
+                "visibility": "on"
+            }]
+        }];
 
         // prepare the map properties
         var options = {
@@ -70,11 +95,12 @@ function loadedGmap() {
 
         // add Marker
         var marker1 = new google.maps.Marker({
-            position: latlng, map: map
+            position: latlng,
+            map: map
         });
 
         // add listener for a click on the pin
-        google.maps.event.addListener(marker1, 'click', function () {
+        google.maps.event.addListener(marker1, 'click', function() {
             infowindow.open(map, marker1);
         });
 
@@ -88,8 +114,8 @@ function loadedGmap() {
 /* ----------------------------------------------------------- */
 /* Nob Mailer START
  /* ----------------------------------------------------------- */
-$(document).ready(function () {
-    $('form.form-email').submit(function (e) {
+$(document).ready(function() {
+    $('form.form-email').submit(function(e) {
         if (e.preventDefault) e.preventDefault();
         else e.returnValue = false;
 
@@ -128,7 +154,7 @@ $(document).ready(function () {
                 cache: false,
                 dataType: 'json',
                 contentType: 'application/json; charset=utf-8',
-                success: function (data) {
+                success: function(data) {
                     // Deal with JSON
                     console.log(data);
                     var returnData = data;
@@ -147,7 +173,7 @@ $(document).ready(function () {
                     }
                     submitButton.prop("disabled", false);
                 },
-                error: function (error) {
+                error: function(error) {
                     console.log(error);
                     // Throw error message
                     submitButton.html("Sorry an error occured");
@@ -166,8 +192,8 @@ $(document).ready(function () {
 /* ----------------------------------------------------------- */
 /* Nob Mailer volunteer BEGIN TODO: You need to make this one efficient by combining original email and this volunteer
 /* ----------------------------------------------------------- */
-$(document).ready(function () {
-    $('form.form-volunteer').submit(function (e) {
+$(document).ready(function() {
+    $('form.form-volunteer').submit(function(e) {
         if (e.preventDefault) e.preventDefault();
         else e.returnValue = false;
 
@@ -206,7 +232,7 @@ $(document).ready(function () {
                 cache: false,
                 dataType: 'json',
                 contentType: 'application/json; charset=utf-8',
-                success: function (data) {
+                success: function(data) {
                     // Deal with JSON
                     console.log(data);
                     var returnData = data;
@@ -225,7 +251,7 @@ $(document).ready(function () {
                     }
                     submitButton.prop("disabled", false);
                 },
-                error: function (error) {
+                error: function(error) {
                     console.log(error);
                     // Throw error message
                     submitButton.html("Sorry an error occured");
@@ -241,37 +267,74 @@ $(document).ready(function () {
 /* ----------------------------------------------------------- */
 /* Nob API START
 /* ----------------------------------------------------------- */
-$(document).ready(function () {
-Parse.initialize("developers-foundation-db");
-Parse.serverURL = 'https://developers-foundation-db.herokuapp.com/parse';
+$(document).ready(function() {
+    Parse.initialize("developers-foundation-db");
+    Parse.serverURL = 'https://developers-foundation-db.herokuapp.com/parse';
 
-var Website = Parse.Object.extend("Website");
-var query = new Parse.Query(Website);
-query.equalTo("nickname", "Nigerian");
-query.first({
-  success: function(obj) {
-  	console.log("THIS IS A DEMO");
-    console.log(obj);
-    
-    document.getElementsByClassName('brand')[0].innerHTML = obj.get('name');
-    document.getElementsByClassName('brand')[1].childNodes[1].innerHTML = obj.get('name');
-    var dbContent = obj.get('content');
-    console.log(dbContent);
-    $('.section .col-md-8').html(dbContent.data[0].content);
-    
-    $('#item1').html(dbContent.data[1].content);
-    
-    var dbExec = obj.get('exec');
-    var execCarousel = $('.carousel-inner')[1];
-    for (i = 0; i < dbExec.length; i++) {
-    
-    }
-  },
-  error: function(object, error) {
-    // The object was not retrieved successfully.
-    // error is a Parse.Error with an error code and message.
-  }
-});
+    var Website = Parse.Object.extend("Website");
+    var query = new Parse.Query(Website);
+    query.equalTo("nickname", "Nigerian");
+    query.first({
+        success: function(obj) {
+            console.log("THIS IS A DEMO");
+            console.log(obj);
+
+            document.getElementsByClassName('brand')[0].innerHTML = obj.get('name');
+            document.getElementsByClassName('brand')[1].childNodes[1].innerHTML = obj.get('name');
+            var dbContent = obj.get('content');
+            console.log(dbContent);
+            $('.section .col-md-8').html(dbContent.data[0].content);
+
+            $('#item1').html(dbContent.data[1].content);
+
+            var dbExec = obj.get('exec'),
+                ExecPhoto = Parse.Object.extend("ExecPhoto");
+            var execCarousel = $('.carousel-inner')[1];
+            for (i = 0; i < dbExec.length; i++) {
+                var exec = dbExec[i];
+                var photoURL,
+                name = exec.name,
+                position = exec.position,
+                description = exec.desc;
+                var inner = "";
+                
+                var photoQuery = new Parse.Query(ExecPhoto);
+                /*
+                <div class="item"><div class="col-md-4"><a href="#"><img src="assets/img/default-user.png" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> John Doe</h4></div></a></div></div>
+                */
+                query.get(exec.pictureid, {
+                    success: function(photo) {
+						photoURL = photo.get('pictureUrl');
+                    },
+                    error: function(object, error) {
+                        // The object was not retrieved successfully.
+                        // error is a Parse.Error with an error code and message.
+                    }
+                });
+                
+                inner = '<div class="item"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+            }
+
+
+			// INIT CAROUSEL
+            $('.carousel.three .item').each(function() {
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+                if (next.next().length > 0) {
+                    next.next().children(':first-child').clone().appendTo($(this));
+                } else {
+                    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+                }
+            });
+        },
+        error: function(object, error) {
+            // The object was not retrieved successfully.
+            // error is a Parse.Error with an error code and message.
+        }
+    });
 });
 /* ----------------------------------------------------------- */
 /* Nob API END
