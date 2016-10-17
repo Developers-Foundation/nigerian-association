@@ -290,13 +290,13 @@ $(document).ready(function() {
             var dbExec = obj.get('exec'),
                 ExecPhoto = Parse.Object.extend("ExecPhoto");
             var execCarousel = $('.carousel-inner')[1];
+            var inner = "";
             for (i = 0; i < dbExec.length; i++) {
                 var exec = dbExec[i];
                 var photoURL,
                 name = exec.name,
                 position = exec.position,
                 description = exec.desc;
-                var inner = "";
                 
                 var photoQuery = new Parse.Query(ExecPhoto);
                 /*
@@ -311,8 +311,10 @@ $(document).ready(function() {
                     }
                 });
                 
-                inner = '<div class="item"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+                inner = inner + '<div class="item"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
             }
+            
+            execCarousel.html(inner);
 
 
 			// INIT CAROUSEL
