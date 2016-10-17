@@ -305,6 +305,9 @@ $(document).ready(function() {
                 query.get(exec.pictureid, {
                     success: function(photo) {
                         photoURL = photo.get('pictureUrl');
+                        if (photoURL === undefined || photoURL === null) {
+                        photoURL = "assets/img/default-user.png";
+                        }
                     },
                     error: function(object, error) {
                         photoURL = "assets/img/default-user.png";
