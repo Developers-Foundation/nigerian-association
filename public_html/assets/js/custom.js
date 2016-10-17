@@ -275,7 +275,7 @@ $(document).ready(function() {
     var query = new Parse.Query(Website);
     query.equalTo("nickname", "Nigerian");
     query.first().then(function(obj) {
-    	var promises = [];
+        var promises = [];
         console.log("THIS IS A DEMO");
         console.log(obj);
 
@@ -309,28 +309,28 @@ $(document).ready(function() {
                     if (photoURL === undefined || photoURL === null) {
                         photoURL = "assets/img/default-user.png";
                     }
-                    
-                    inner = inner + '<div class="item"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
-                    
+
+                    inner = inner + '<div class="item' + i == 0 ? ' active' : '' + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+
                     console.log(inner);
-        			execCarousel.innerHTML = inner;
+                    execCarousel.innerHTML = inner;
                 },
                 error: function(object, error) {
-                	console.log(error);
+                    console.log(error);
                     photoURL = "assets/img/default-user.png";
-                    
-                    inner = inner + '<div class="item"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
-                    
+
+                    inner = inner + '<div class="item' + i == 0 ? ' active' : '' + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+
                     console.log(inner);
-        			execCarousel.innerHTML = inner;
+                    execCarousel.innerHTML = inner;
                 }
             }));
         }
         console.log(inner);
         return Parse.Promise.when(promises);
-    }).then(function () {
-    	// done
-    	console.log("init");
+    }).then(function() {
+        // done
+        console.log("init");
         // INIT CAROUSEL
         $('.carousel.three .item').each(function() {
             var next = $(this).next();
