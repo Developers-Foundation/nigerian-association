@@ -255,6 +255,9 @@ query.first({
     
     document.getElementsByClassName('brand')[0].innerHTML = obj.get('name');
     document.getElementsByClassName('brand')[1].childNodes[1].innerHTML = obj.get('name');
+    var dbContent = obj.get('content');
+    console.log(dbContent);
+    $('.section .col-md-8').html(dbContent.data[0].content);
   },
   error: function(object, error) {
     // The object was not retrieved successfully.
