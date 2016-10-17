@@ -250,8 +250,11 @@ var query = new Parse.Query(Website);
 query.equalTo("nickname", "Nigerian");
 query.first({
   success: function(obj) {
-    // The object was retrieved successfully.
+  	console.log("THIS IS A DEMO");
     console.log(obj);
+    
+    document.getElementsByClassName('brand')[0].innerHTML = obj.get('name');
+    document.getElementsByClassName('brand')[1].childNodes[1].innerHTML = obj.get('name');
   },
   error: function(object, error) {
     // The object was not retrieved successfully.
