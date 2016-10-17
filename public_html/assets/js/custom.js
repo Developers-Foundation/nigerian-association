@@ -325,6 +325,7 @@ $(document).ready(function() {
         return Parse.Promise.when(promises);
     }).then(function () {
     	// done
+    	console.log("init");
         // INIT CAROUSEL
         $('.carousel.three .item').each(function() {
             var next = $(this).next();
