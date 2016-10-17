@@ -318,6 +318,11 @@ $(document).ready(function() {
                 error: function(object, error) {
                 	console.log(error);
                     photoURL = "assets/img/default-user.png";
+                    
+                    inner = inner + '<div class="item"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+                    
+                    console.log(inner);
+        			execCarousel.innerHTML = inner;
                 }
             }));
         }
