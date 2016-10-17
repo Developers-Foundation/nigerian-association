@@ -241,6 +241,7 @@ $(document).ready(function () {
 /* ----------------------------------------------------------- */
 /* Nob API START
 /* ----------------------------------------------------------- */
+$(document).ready(function () {
 Parse.initialize("developers-foundation-db");
 Parse.serverURL = 'https://developers-foundation-db.herokuapp.com/parse';
 
@@ -256,6 +257,7 @@ query.first({
     // The object was not retrieved successfully.
     // error is a Parse.Error with an error code and message.
   }
+});
 });
 /* ----------------------------------------------------------- */
 /* Nob API END
