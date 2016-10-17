@@ -294,30 +294,30 @@ $(document).ready(function() {
             for (i = 0; i < dbExec.length; i++) {
                 var exec = dbExec[i];
                 var photoURL,
-                name = exec.name,
-                position = exec.position,
-                description = exec.desc;
-                
+                    name = exec.name,
+                    position = exec.position,
+                    description = exec.desc;
+
                 var photoQuery = new Parse.Query(ExecPhoto);
                 /*
                 <div class="item"><div class="col-md-4"><a href="#"><img src="assets/img/default-user.png" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> John Doe</h4></div></a></div></div>
                 */
                 query.get(exec.pictureid, {
                     success: function(photo) {
-						photoURL = photo.get('pictureUrl');
+                        photoURL = photo.get('pictureUrl');
                     },
                     error: function(object, error) {
                         photoURL = "assets/img/default-user.png";
                     }
                 });
-                
+
                 inner = inner + '<div class="item"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
             }
-            
+			console.log(inner);
             execCarousel.html(inner);
 
 
-			// INIT CAROUSEL
+            // INIT CAROUSEL
             $('.carousel.three .item').each(function() {
                 var next = $(this).next();
                 if (!next.length) {
