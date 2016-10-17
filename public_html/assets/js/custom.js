@@ -303,7 +303,7 @@ $(document).ready(function() {
             /*
             <div class="item"><div class="col-md-4"><a href="#"><img src="assets/img/default-user.png" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> John Doe</h4></div></a></div></div>
             */
-            promises.push(query.get(exec.pictureid, {
+            promises.push(photoQuery.get(exec.pictureid, {
                 success: function(photo) {
                     photoURL = photo.get('pictureUrl');
                     if (photoURL === undefined || photoURL === null) {
