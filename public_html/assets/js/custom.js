@@ -274,7 +274,7 @@ $(document).ready(function() {
     var Website = Parse.Object.extend("Website");
     var query = new Parse.Query(Website);
     query.equalTo("nickname", "Nigerian");
-    query.first({
+    query.first().then(function(obj) {
     	var promises = [];
         console.log("THIS IS A DEMO");
         console.log(obj);
