@@ -310,7 +310,7 @@ $(document).ready(function() {
                         photoURL = "assets/img/default-user.png";
                     }
 
-                    inner = inner + '<div class="item' + i == 0 ? ' active' : '' + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+                    inner = inner + '<div class="item' + (i == 0) ? ' active' : '' + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
 
                     console.log(inner);
                     execCarousel.innerHTML = inner;
@@ -319,7 +319,7 @@ $(document).ready(function() {
                     console.log(error);
                     photoURL = "assets/img/default-user.png";
 
-                    inner = inner + '<div class="item' + i == 0 ? ' active' : '' + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+                    inner = inner + '<div class="item' + (i == 0) ? ' active' : '' + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
 
                     console.log(inner);
                     execCarousel.innerHTML = inner;
@@ -344,6 +344,8 @@ $(document).ready(function() {
                 $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
             }
         });
+    }, function (err) {
+    console.log(err);
     });
 });
 /* ----------------------------------------------------------- */
