@@ -307,8 +307,7 @@ $(document).ready(function() {
 						photoURL = photo.get('pictureUrl');
                     },
                     error: function(object, error) {
-                        // The object was not retrieved successfully.
-                        // error is a Parse.Error with an error code and message.
+                        photoURL = "assets/img/default-user.png";
                     }
                 });
                 
