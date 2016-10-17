@@ -315,11 +315,12 @@ $(document).ready(function() {
         			execCarousel.innerHTML = inner;
                 },
                 error: function(object, error) {
+                	console.log(error);
                     photoURL = "assets/img/default-user.png";
                 }
             }));
         }
-        
+        console.log(inner);
         return Parse.Promise.when(promises);
     }).then(function () {
     	// done
