@@ -5,6 +5,7 @@
                 <img src="assets/img/bg.jpg" style="width: 100%;" class="img-responsive">
                 <div class="carousel-caption">
                     <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
+                    test
                 </div>
         </div>
         <div class="item">
