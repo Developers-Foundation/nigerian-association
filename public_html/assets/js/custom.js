@@ -275,70 +275,68 @@ $(document).ready(function() {
     var query = new Parse.Query(Website);
     query.equalTo("nickname", "Nigerian");
     query.first({
-        success: function(obj) {
-            console.log("THIS IS A DEMO");
-            console.log(obj);
+    	var promises = [];
+        console.log("THIS IS A DEMO");
+        console.log(obj);
 
-            document.getElementsByClassName('brand')[0].innerHTML = obj.get('name');
-            document.getElementsByClassName('brand')[1].childNodes[1].innerHTML = obj.get('name');
-            var dbContent = obj.get('content');
-            console.log(dbContent);
-            $('.section .col-md-8').html(dbContent.data[0].content);
+        document.getElementsByClassName('brand')[0].innerHTML = obj.get('name');
+        document.getElementsByClassName('brand')[1].childNodes[1].innerHTML = obj.get('name');
+        var dbContent = obj.get('content');
+        console.log(dbContent);
+        $('.section .col-md-8').html(dbContent.data[0].content);
 
-            $('#item1').html(dbContent.data[1].content);
+        $('#item1').html(dbContent.data[1].content);
 
-            var dbExec = obj.get('exec'),
-                ExecPhoto = Parse.Object.extend("ExecPhoto");
-            var execCarousel = $('.carousel-inner')[1];
-            var inner = "";
-            for (i = 0; i < dbExec.length; i++) {
-                var exec = dbExec[i];
-                var photoURL,
-                    name = exec.name,
-                    position = exec.position,
-                    description = exec.desc;
+        var dbExec = obj.get('exec'),
+            ExecPhoto = Parse.Object.extend("ExecPhoto");
+        var execCarousel = $('.carousel-inner')[1];
+        var inner = "";
+        for (i = 0; i < dbExec.length; i++) {
+            var exec = dbExec[i];
+            var photoURL,
+                name = exec.name,
+                position = exec.position,
+                description = exec.desc;
 
-                var photoQuery = new Parse.Query(ExecPhoto);
-                /*
-                <div class="item"><div class="col-md-4"><a href="#"><img src="assets/img/default-user.png" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> John Doe</h4></div></a></div></div>
-                */
-                query.get(exec.pictureid, {
-                    success: function(photo) {
-                        photoURL = photo.get('pictureUrl');
-                        if (photoURL === undefined || photoURL === null) {
-                        photoURL = "assets/img/default-user.png";
-                        }
-                    },
-                    error: function(object, error) {
+            var photoQuery = new Parse.Query(ExecPhoto);
+            /*
+            <div class="item"><div class="col-md-4"><a href="#"><img src="assets/img/default-user.png" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> John Doe</h4></div></a></div></div>
+            */
+            promises.push(query.get(exec.pictureid, {
+                success: function(photo) {
+                    photoURL = photo.get('pictureUrl');
+                    if (photoURL === undefined || photoURL === null) {
                         photoURL = "assets/img/default-user.png";
                     }
-                });
-
-                inner = inner + '<div class="item"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
-            }
-			console.log(inner);
-            execCarousel.innerHTML = inner;
-
-
-            // INIT CAROUSEL
-            $('.carousel.three .item').each(function() {
-                var next = $(this).next();
-                if (!next.length) {
-                    next = $(this).siblings(':first');
+                    
+                    inner = inner + '<div class="item"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+                    
+                    console.log(inner);
+        			execCarousel.innerHTML = inner;
+                },
+                error: function(object, error) {
+                    photoURL = "assets/img/default-user.png";
                 }
-                next.children(':first-child').clone().appendTo($(this));
-                if (next.next().length > 0) {
-                    next.next().children(':first-child').clone().appendTo($(this));
-                } else {
-                    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-                }
-            });
-        },
-        error: function(object, error) {
-            // The object was not retrieved successfully.
-            // error is a Parse.Error with an error code and message.
+            }));
         }
-    });
+        
+        return Parse.Promise.when(promises);
+    }).then(function () {
+    	// done
+        // INIT CAROUSEL
+        $('.carousel.three .item').each(function() {
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+            if (next.next().length > 0) {
+                next.next().children(':first-child').clone().appendTo($(this));
+            } else {
+                $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+            }
+        });
+    };
 });
 /* ----------------------------------------------------------- */
 /* Nob API END
