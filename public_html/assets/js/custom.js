@@ -293,6 +293,7 @@ $(document).ready(function() {
         var inner = "";
         for (i = 0; i < dbExec.length; i++) {
             var exec = dbExec[i];
+            console.log(exec);
             var photoURL,
                 name = exec.name,
                 position = exec.position,
