@@ -258,6 +258,14 @@ query.first({
     var dbContent = obj.get('content');
     console.log(dbContent);
     $('.section .col-md-8').html(dbContent.data[0].content);
+    
+    $('#item1').html(dbContent.data[1].content);
+    
+    var dbExec = obj.get('exec');
+    var execCarousel = $('.carousel-inner')[1];
+    for (i = 0; i < dbExec.length; i++) {
+    
+    }
   },
   error: function(object, error) {
     // The object was not retrieved successfully.
