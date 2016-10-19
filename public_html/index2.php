@@ -71,7 +71,6 @@
                     <p><i class="fa fa-dot-circle-o"></i> The IMT then convened a Special General Meeting on August 8, 2015 where New Officers were
                         elected and the IMT handed over to the new team.</p>
                 </div>
-
             </div>
         </div>
     </div>
@@ -186,13 +185,13 @@
                                         <li class="active" style="width: 25%">
                                             <a href="#item1" data-toggle="tab">
                                                 <i class="material-icons">face</i>
-                                                Inaugural Meet & Greet
+                                                Events
                                             </a>
                                         </li>
                                         <li style="width: 25%">
                                             <a href="#item2" data-toggle="tab">
                                                 <i class="material-icons">chat</i>
-                                                Blasts from the Past
+                                                Previous Events
                                             </a>
                                         </li>
                                         <li style="width: 25%">
