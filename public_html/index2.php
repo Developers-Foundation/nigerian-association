@@ -243,7 +243,7 @@
                                     <a href="gallery.php"><h3>Visit this page for our gallery.</h3></a>
                                 </div>
                                 <div class="tab-pane" id="item4">
-                                    <a href="http://www.acfola.ca/career/"><h3>Job Opportunities from Acofola</h3></a>
+                                    <!--<a href="http://www.acfola.ca/career/"><h3>Job Opportunities from Acofola</h3></a>-->
                                     <div id="job-opportunities">
                                         <?php
                                         /*$page = new DomDocument;
@@ -252,26 +252,26 @@
 
                                         echo $page->getElementById('content');*/
                                         ?>
+                                        <h3>Online Resources for Job Search</h3>
+                                        <ul>
+                                            <li class="first-child"><a href="http://www.lehc.ca/?page_id=250" target="_blank"><strong>London Employment Help Centre</strong> || Job Postings</a></li>
+                                            <li><a href="http://www.jobbank.gc.ca/res-eng.aspx?CmmGrp=GON009&amp;OpPage=50&amp;Stdnt=No&amp;nsrc=1" target="_blank"><strong>Job Bank</strong> || Job Posts in London and Area</a></li>
+                                            <li><a href="http://onwin.ca/en/employment/" target="_blank"><strong>Ontario Work Info Net</strong> || Career Planning</a></li>
+                                            <li><a href="https://careers2.hiredesk.net/ViewJobs/?Comp=CityofLondon&amp;TP_ID=1&amp;JB_ID=&amp;LAN=en-US" target="_blank"><strong>City of London</strong> || Current Career Opportunities</a></li>
+                                            <li><a href="http://www.gojobs.gov.on.ca/Search.aspx?Language=English" target="_blank"><strong>Ontario Public Service</strong> || Jobs Posts in London and Area&nbsp;</a>(English)</li>
+                                            <li><a href="http://www.gojobs.gov.on.ca/Search.aspx?Language=French" target="_blank"><strong>Ontario Public Service</strong> || Job Posts in London and Area</a> (French)</li>
+                                            <li><a href="http://www.workingincanada.gc.ca/job_search_results.do?searchstring=london&amp;button.submit=Search" target="_blank"><strong>Working in Canada</strong> || Job Posts in London</a></li>
+                                            <li><a href="http://www.tcu.gov.on.ca/eng/employmentontario/" target="_blank"><strong>Employment Ontario</strong> || Looking for Work? Looking to Hire?</a></li>
+                                            <li class="last-child"><a href="http://www.ontarioimmigration.ca/en/geo/index.htm" target="_blank"><strong>Global Experience Ontario || </strong>Resource Centre for Internationally Trained Professionals&nbsp;</a></li>
+                                        </ul>
+                                        <h3>Self Employment Resources</h3>
+                                        <ul>
+                                            <li class="first-child"><a href="http://sbcentre.ca/resources.php" target="_blank"><strong>London Small Business Centre</strong> || Information and Resources for Small Business</a></li>
+                                            <li><a href="http://www.cybf.ca/resources/" target="_blank"><strong>Canadian Youth Business Foundation</strong> || Featured Resources</a></li>
+                                            <li><a href="http://www.bdc.ca/EN/advice_centre/Pages/default.aspx" target="_blank"><strong>Business Development Bank</strong> || Advice Centre</a></li>
+                                            <li class="last-child"><a href="http://ontario.coop/programs_services/coop_development/starting_a_coop" target="_blank"><strong>The Ontario Cooperative Association</strong> || Starting a Co-op</a></li>
+                                        </ul>
                                     </div>
-                                    <h3>Online Resources for Job Search</h3>
-                                    <ul>
-                                        <li class="first-child"><a href="http://www.lehc.ca/?page_id=250" target="_blank"><strong>London Employment Help Centre</strong> || Job Postings</a></li>
-                                        <li><a href="http://www.jobbank.gc.ca/res-eng.aspx?CmmGrp=GON009&amp;OpPage=50&amp;Stdnt=No&amp;nsrc=1" target="_blank"><strong>Job Bank</strong> || Job Posts in London and Area</a></li>
-                                        <li><a href="http://onwin.ca/en/employment/" target="_blank"><strong>Ontario Work Info Net</strong> || Career Planning</a></li>
-                                        <li><a href="https://careers2.hiredesk.net/ViewJobs/?Comp=CityofLondon&amp;TP_ID=1&amp;JB_ID=&amp;LAN=en-US" target="_blank"><strong>City of London</strong> || Current Career Opportunities</a></li>
-                                        <li><a href="http://www.gojobs.gov.on.ca/Search.aspx?Language=English" target="_blank"><strong>Ontario Public Service</strong> || Jobs Posts in London and Area&nbsp;</a>(English)</li>
-                                        <li><a href="http://www.gojobs.gov.on.ca/Search.aspx?Language=French" target="_blank"><strong>Ontario Public Service</strong> || Job Posts in London and Area</a> (French)</li>
-                                        <li><a href="http://www.workingincanada.gc.ca/job_search_results.do?searchstring=london&amp;button.submit=Search" target="_blank"><strong>Working in Canada</strong> || Job Posts in London</a></li>
-                                        <li><a href="http://www.tcu.gov.on.ca/eng/employmentontario/" target="_blank"><strong>Employment Ontario</strong> || Looking for Work? Looking to Hire?</a></li>
-                                        <li class="last-child"><a href="http://www.ontarioimmigration.ca/en/geo/index.htm" target="_blank"><strong>Global Experience Ontario || </strong>Resource Centre for Internationally Trained Professionals&nbsp;</a></li>
-                                    </ul>
-                                    <h3>Self Employment Resources</h3>
-                                    <ul>
-                                        <li class="first-child"><a href="http://sbcentre.ca/resources.php" target="_blank"><strong>London Small Business Centre</strong> || Information and Resources for Small Business</a></li>
-                                        <li><a href="http://www.cybf.ca/resources/" target="_blank"><strong>Canadian Youth Business Foundation</strong> || Featured Resources</a></li>
-                                        <li><a href="http://www.bdc.ca/EN/advice_centre/Pages/default.aspx" target="_blank"><strong>Business Development Bank</strong> || Advice Centre</a></li>
-                                        <li class="last-child"><a href="http://ontario.coop/programs_services/coop_development/starting_a_coop" target="_blank"><strong>The Ontario Cooperative Association</strong> || Starting a Co-op</a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
