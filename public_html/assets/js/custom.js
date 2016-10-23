@@ -289,8 +289,7 @@ $(document).ready(function() {
 
         var dbExec = obj.get('exec'),
             ExecPhoto = Parse.Object.extend("ExecPhoto");
-        var execCarousel = $('.carousel-inner')[1];
-        var inner = "";
+        var inner = [];
         var i = 0;
         for (; i < dbExec.length; i++) {
             var exec = dbExec[i];
@@ -312,20 +311,22 @@ $(document).ready(function() {
                     }
 
                     console.log(i + " URL: " + photoURL + "\nName: " + name);
-                    inner = inner + '<div class="item' + (i == 0) ? ' active' : '' + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+                    var item = '<div class="item' + (i == 0) ? ' active' : '' + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+                    inner.push(item);
 
                     console.log(inner);
-                    execCarousel.innerHTML = inner;
+                    updateExecCarousel(inner);
                 },
                 error: function(object, error) {
                     console.log(error);
                     photoURL = "assets/img/default-user.png";
 
                     console.log(i + " URL: " + photoURL + "\nName: " + name);
-                    inner = inner + '<div class="item' + (i == 0) ? ' active' : '' + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+                    var item = '<div class="item' + (i == 0) ? ' active' : '' + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+                    inner.push(item);
 
                     console.log(inner);
-                    execCarousel.innerHTML = inner;
+                    updateExecCarousel(inner);
                 }
             }));
         }
@@ -351,6 +352,17 @@ $(document).ready(function() {
     console.log(err);
     });
 });
+
+function updateExecCarousel(innerArr) {
+    var execCarousel = $('.carousel-inner')[1];
+    var inner = "";
+
+    for (i = 0; i < innerArr.length; i++) {
+        inner += innerArr[i];
+    }
+
+    execCarousel.innerHTML = inner;
+}
 /* ----------------------------------------------------------- */
 /* Nob API END
 /* ----------------------------------------------------------- */
