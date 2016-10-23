@@ -16,9 +16,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 text-center">
-                    <div class="title">
+                    <!--<div class="title">
                         <h2>EVENT TITLE HERE</h2>
-                    </div>
+                    </div>-->
                     <div class="gallery">
                         <div class="row">
                             <div class="col-md-4">
