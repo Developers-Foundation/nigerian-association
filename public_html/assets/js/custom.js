@@ -287,7 +287,7 @@ $(document).ready(function() {
 
         $('#item1').html(dbContent.data[1].content);
 
-        var dbExec = obj.get('exec'),
+        /*var dbExec = obj.get('exec'),
             ExecPhoto = Parse.Object.extend("ExecPhoto");
         var inner = [];
         var i = 0;
@@ -300,9 +300,9 @@ $(document).ready(function() {
                 description = exec.desc;
 
             var photoQuery = new Parse.Query(ExecPhoto);
-            /*
+
             <div class="item"><div class="col-md-4"><a href="#"><img src="assets/img/default-user.png" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> John Doe</h4></div></a></div></div>
-            */
+
             promises.push(photoQuery.get(exec.pictureid, {
                 success: function(photo) {
                     photoURL = photo.get('pictureUrl');
@@ -330,7 +330,7 @@ $(document).ready(function() {
                 }
             }));
         }
-        console.log(inner);
+        console.log(inner);*/
         return Parse.Promise.when(promises);
     }).then(function() {
         // done
