@@ -95,7 +95,6 @@ Parse.initialize("developers-foundation-db");
 Parse.serverURL = 'https://developers-foundation-db.herokuapp.com/parse'
 </script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-<?php if (isset($hasGmap) && $hasGmap) echo '<script src="//maps.google.com/maps/api/js?key=AIzaSyAJWaE3XJc5GQZEx5OVK7yIU44tInbavBo&callback=loadedGmap" async defer></script>'; ?>
 <script src="assets/js/material.min.js"></script>
 
 <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
@@ -108,6 +107,8 @@ Parse.serverURL = 'https://developers-foundation-db.herokuapp.com/parse'
 <script src="assets/js/material-kit.js" type="text/javascript"></script>
 
 <script src="assets/js/custom.js" type="text/javascript"></script>
+
+<?php if (isset($hasGmap) && $hasGmap) echo '<script src="//maps.google.com/maps/api/js?key=AIzaSyAJWaE3XJc5GQZEx5OVK7yIU44tInbavBo&callback=loadedGmap" async defer></script>'; ?>
 
 <script type="text/javascript">
     $(function () {
