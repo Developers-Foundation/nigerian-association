@@ -303,15 +303,22 @@
                                         </ul>
 
                                         <h3>Self Employment Resources</h3>
-                                        <a href="http://sbcentre.ca/resources.php" target="_blank"><strong>London Small
-                                                Business Centre</strong> || Information and Resources for Small Business</a>
-                                        <a href="http://www.cybf.ca/resources/" target="_blank"><strong>Canadian Youth
-                                                Business Foundation</strong> || Featured Resources</a>
-                                        <a href="http://www.bdc.ca/EN/advice_centre/Pages/default.aspx" target="_blank"><strong>Business
-                                                Development Bank</strong> || Advice Centre</a>
-                                        <a href="http://ontario.coop/programs_services/coop_development/starting_a_coop"
-                                           target="_blank"><strong>The Ontario Cooperative Association</strong> ||
-                                            Starting a Co-op</a>
+                                        <ul>
+                                            <li><a href="http://sbcentre.ca/resources.php" target="_blank"><strong>London
+                                                        Small
+                                                        Business Centre</strong> || Information and Resources for Small
+                                                    Business</a></li>
+                                            <li><a href="http://www.cybf.ca/resources/" target="_blank"><strong>Canadian
+                                                        Youth
+                                                        Business Foundation</strong> || Featured Resources</a></li>
+                                            <li><a href="http://www.bdc.ca/EN/advice_centre/Pages/default.aspx"
+                                                   target="_blank"><strong>Business
+                                                        Development Bank</strong> || Advice Centre</a></li>
+                                            <li>
+                                                <a href="http://ontario.coop/programs_services/coop_development/starting_a_coop"
+                                                   target="_blank"><strong>The Ontario Cooperative Association</strong>
+                                                    || Starting a Co-op</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
