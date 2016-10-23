@@ -1,5 +1,13 @@
 <div class="header header-filter carousel slide" style="" id="title-carousel" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html">
+    <ol class="carousel-indicators">
+        <li data-target="#title-carousel" data-slide-to="1" class="active"></li>
+        <li data-target="#title-carousel" data-slide-to="2" class=""></li>
+        <li data-target="#title-carousel" data-slide-to="3" class=""></li>
+        <li data-target="#title-carousel" data-slide-to="4" class=""></li>
+        <li data-target="#title-carousel" data-slide-to="5" class=""></li>
+        <li data-target="#title-carousel" data-slide-to="0" class=""></li>
+    </ol>
     <div class="carousel-inner title-carousel" >
         <div class="item">
                 <img src="assets/img/bg.jpg" style="width: 100%;" class="img-responsive">
