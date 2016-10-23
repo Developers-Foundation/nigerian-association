@@ -4028,7 +4028,7 @@ h2.title {
         margin-right: 10px;
     }
 }
-@media all and (transform-3d), (-webkit-transform-3d) {
+/*@media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-inner > .item.next,
     .carousel-inner > .item.active.right {
         left: 0;
@@ -4042,7 +4042,7 @@ h2.title {
         -webkit-transform: translate3d(-33%, 0, 0);
         transform: translate3d(-33%, 0, 0);
     }
-}
+}*/
 
 hr{
     border-color: #008000;
