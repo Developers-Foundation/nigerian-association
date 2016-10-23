@@ -2801,6 +2801,10 @@ h6, .h6 {
     bottom: 5px;
 }
 
+#title-carousel.carousel .carousel-indicators {
+    bottom: 30px;
+}
+
 .carousel .carousel-indicators li,
 .carousel .carousel-indicators .active {
     margin: 11px 10px;
