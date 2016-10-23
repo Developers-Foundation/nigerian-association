@@ -40,7 +40,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
 
 a, a:hover, a:focus {
     /*color: #9c27b0;*/
-    color:#46a149;
+    color: #46a149;
 }
 
 a .material-icons, a:hover .material-icons, a:focus .material-icons {
@@ -190,7 +190,7 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
 .input-group-btn .btn.btn-fab.btn-primary, .btn-group-raised
 .input-group-btn .btn.btn-primary {
     /*background-color: #9c27b0;*/
-    color:#46a149;
+    color: #46a149;
     color: #ffffff;
 }
 
@@ -987,7 +987,7 @@ fieldset[disabled] .form-group.is-focused .radio label {
 .radio input[type=radio]:checked ~ .circle {
     /*
     border-color: #9c27b0;*/
-    border-color:#46a149;
+    border-color: #46a149;
 }
 
 .radio input[type=radio]:checked ~ .check {
@@ -1343,7 +1343,7 @@ output {
 
 .form-group.is-focused label,
 .form-group.is-focused label.control-label {
-    color:#008800;
+    color: #008800;
     /*color: #9c27b0;*/
 }
 
@@ -1843,8 +1843,9 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
     font-size: 30px;
     padding: 15px 0;
 }
+
 /* this removes margin-left 2px from bootstrap*/
-.nav-pills>li+li {
+.nav-pills > li + li {
     margin-left: 0px;
 }
 
@@ -2680,7 +2681,7 @@ h6, .h6 {
 
 .nav-tabs {
     background-color: #008800;
-   /* background: #9c27b0;*/
+    /* background: #9c27b0;*/
     border: 0;
     border-radius: 3px;
     padding: 0 15px;
@@ -2799,6 +2800,10 @@ h6, .h6 {
 
 .carousel .carousel-indicators {
     bottom: 5px;
+}
+
+#title-carousel.carousel .carousel-indicators {
+    bottom: 30px;
 }
 
 .carousel .carousel-indicators li,
@@ -3683,15 +3688,15 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 .main-raised {
-    margin: -60px 30px 0px;
+    margin: -20px 30px 0px;
     border-radius: 6px;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .title {
-     font-weight: 500;
-     color: #3C4858;
- }
+    font-weight: 500;
+    color: #3C4858;
+}
 
 h2.title {
     margin-bottom: 30px;
@@ -3789,7 +3794,9 @@ h2.title {
     width: 100%;
     padding-top: 10px;
     z-index: 1031;
-}/*
+}
+
+/*
 .index-page .wrapper > .header {
     height: 90vh;
 }*/
@@ -3821,6 +3828,7 @@ h2.title {
 .index-page .section-basic {
     padding-top: 15px;
 }
+
 /*
 .index-page .header-filter:after {
     background: rgba(101, 47, 142, 0.64);
@@ -4024,6 +4032,7 @@ h2.title {
         margin-right: 10px;
     }
 }
+
 @media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-inner > .item.next,
     .carousel-inner > .item.active.right {
@@ -4040,16 +4049,16 @@ h2.title {
     }
 }
 
-hr{
+hr {
     border-color: #008000;
     border-width: 4px;
     width: 10%;
     clear: both;
 }
 
-.title-carousel{
+.title-carousel {
     position: relative;
-    height:600px;
+    height: 600px;
     width: 100%;
     overflow: hidden;
 }

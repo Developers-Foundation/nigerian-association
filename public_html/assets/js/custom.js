@@ -20,8 +20,6 @@ $('.carousel.three .item').each(function () {
 /* ----------------------------------------------------------- */
 /* Nob Three Carousel Correction END
  /* ----------------------------------------------------------- */
-
-
 function loadedGmap() {
     if ($('body').hasClass("index-page")) {
         // create a LatLng object containing the coordinate for the center of the map
@@ -88,8 +86,8 @@ function loadedGmap() {
 /* ----------------------------------------------------------- */
 /* Nob Mailer START
  /* ----------------------------------------------------------- */
-$(document).ready(function () {
-    $('form.form-email').submit(function (e) {
+$(document).ready(function() {
+    $('form.form-email').submit(function(e) {
         if (e.preventDefault) e.preventDefault();
         else e.returnValue = false;
 

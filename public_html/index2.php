@@ -1,6 +1,14 @@
 <div class="header header-filter carousel slide" style="" id="title-carousel" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html">
-    <div class="carousel-inner title-carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#title-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#title-carousel" data-slide-to="1" class=""></li>
+        <li data-target="#title-carousel" data-slide-to="2" class=""></li>
+        <li data-target="#title-carousel" data-slide-to="3" class=""></li>
+        <li data-target="#title-carousel" data-slide-to="4" class=""></li>
+        <li data-target="#title-carousel" data-slide-to="5" class=""></li>
+    </ol>
+    <div class="carousel-inner title-carousel" >
         <div class="item">
             <img src="assets/img/bg.jpg" style="width: 100%;" class="img-responsive">
             <div class="carousel-caption">
@@ -64,14 +72,11 @@
                 <div class="col-md-8">
                     </br>
                     </br>
-                    <p><i class="fa fa-dot-circle-o"></i> The Nigerian Association of London and Area (NALA) is a
-                        community of Londoners of Nigerian
+                    <p><i class="fa fa-dot-circle-o"></i> The Nigerian Association of London and Area (NALA) is a community of Londoners of Nigerian
                         descent.</p>
-                    <p><i class="fa fa-dot-circle-o"></i> The new NALA is preceded by a similar organization that
-                        existed until the 90s. The Nigerian
+                    <p><i class="fa fa-dot-circle-o"></i> The new NALA is preceded by a similar organization that existed until the 90s. The Nigerian
                         community met on March 7, 2015 where the Interim Management Team (IMT)was formed.</p>
-                    <p><i class="fa fa-dot-circle-o"></i> The IMT then convened a Special General Meeting on August 8,
-                        2015 where New Officers were
+                    <p><i class="fa fa-dot-circle-o"></i> The IMT then convened a Special General Meeting on August 8, 2015 where New Officers were
                         elected and the IMT handed over to the new team.</p>
                 </div>
             </div>
@@ -300,8 +305,7 @@
         </div>
     </div>
 
-    <div class="section suggestion-section header-filter"
-         style="width: 100%; background-image: url(assets/img/city1.jpg) ;">
+    <div class="section suggestion-section header-filter" style="width: 100%; background-image: url(assets/img/city1.jpg) ;">
         <div class="container">
             <div class="title text-center">
                 <h2><strong>Contact Us</strong></h2>
