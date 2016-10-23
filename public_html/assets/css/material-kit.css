@@ -4057,3 +4057,9 @@ hr{
     width: 100%;
     overflow: hidden;
 }
+
+.three .carousel-inner { margin: auto; width: 90%; }
+.three .active.left { left: -33.33%; }
+.three .active.right { left: 33.33%; }
+.three .next { left: 33.33%; }
+.three .prev { left: -33.33%; }
