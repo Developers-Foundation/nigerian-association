@@ -336,6 +336,9 @@ $(document).ready(function() {
         // done
         console.log("init");
         // INIT CAROUSEL
+        $('.carousel.three').carousel({
+            interval: 5000
+        });
         setTimeout(function () {
             $('.carousel.three .item').each(function() {
                 var next = $(this).next();
