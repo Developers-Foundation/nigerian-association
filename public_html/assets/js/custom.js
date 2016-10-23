@@ -311,7 +311,7 @@ $(document).ready(function() {
                     }
 
                     console.log(i + " URL: " + photoURL + "\nName: " + name);
-                    var item = '<div class="item' + (i == 0) ? ' active' : '' + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+                    var item = '<div class="item' + ((i == 0) ? ' active' : '') + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
                     inner.push(item);
 
                     console.log(inner);
@@ -322,7 +322,7 @@ $(document).ready(function() {
                     photoURL = "assets/img/default-user.png";
 
                     console.log(i + " URL: " + photoURL + "\nName: " + name);
-                    var item = '<div class="item' + (i == 0) ? ' active' : '' + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+                    var item = '<div class="item' + ((i == 0) ? ' active' : '') + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
                     inner.push(item);
 
                     console.log(inner);
