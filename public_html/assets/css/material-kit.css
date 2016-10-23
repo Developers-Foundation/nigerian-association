@@ -4062,3 +4062,7 @@ hr {
     width: 100%;
     overflow: hidden;
 }
+
+#job-opportunities ul {
+    list-style-type: none;
+}
