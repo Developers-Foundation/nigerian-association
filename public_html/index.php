@@ -6,6 +6,10 @@
  * Time: 10:55 PM
  */
 
+require_once "../vendor/autoload.php";
+use Parse\ParseQuery;
+use Parse\ParseException;
+
 $page = "index-page";
 $hasGmap = true;
 include_once("header.php");

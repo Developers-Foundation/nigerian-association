@@ -8,37 +8,37 @@
         <li data-target="#title-carousel" data-slide-to="4" class=""></li>
         <li data-target="#title-carousel" data-slide-to="5" class=""></li>
     </ol>
-    <div class="carousel-inner title-carousel" >
+    <div class="carousel-inner title-carousel">
         <div class="item">
-                <img src="assets/img/bg.jpg" style="width: 100%;" class="img-responsive">
-                <div class="carousel-caption">
-                    <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
-                    test
-                </div>
+            <img src="assets/img/bg.jpg" style="width: 100%;" class="img-responsive">
+            <div class="carousel-caption">
+                <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
+                test
+            </div>
         </div>
         <div class="item">
-                <img src="assets/img/bg2.jpeg" style="width: 100%;" class="img-responsive">
-                <div class="carousel-caption">
-                    <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
-                </div>
+            <img src="assets/img/bg2.jpeg" style="width: 100%;" class="img-responsive">
+            <div class="carousel-caption">
+                <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
+            </div>
         </div>
         <div class="item">
-                <img src="assets/img/bg3.jpeg" style="width: 100%;" class="img-responsive">
-                <div class="carousel-caption">
-                    <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
-                </div>
+            <img src="assets/img/bg3.jpeg" style="width: 100%;" class="img-responsive">
+            <div class="carousel-caption">
+                <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
+            </div>
         </div>
         <div class="item">
-                <img src="assets/img/bg4.jpeg" style="width: 100%;" class="img-responsive">
-                <div class="carousel-caption">
-                    <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
-                </div>
+            <img src="assets/img/bg4.jpeg" style="width: 100%;" class="img-responsive">
+            <div class="carousel-caption">
+                <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
+            </div>
         </div>
         <div class="item active">
-                <img src="assets/img/bg6.jpg" style="width: 100%;" class="img-responsive">
-                <div class="carousel-caption">
-                    <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
-                </div>
+            <img src="assets/img/bg6.jpg" style="width: 100%;" class="img-responsive">
+            <div class="carousel-caption">
+                <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
+            </div>
         </div>
     </div>
     <!--<a class="left carousel-control" href="#teamCarousel" data-slide="prev">
@@ -73,11 +73,14 @@
                 <div class="col-md-8">
                     </br>
                     </br>
-                    <p><i class="fa fa-dot-circle-o"></i> The Nigerian Association of London and Area (NALA) is a community of Londoners of Nigerian
+                    <p><i class="fa fa-dot-circle-o"></i> The Nigerian Association of London and Area (NALA) is a
+                        community of Londoners of Nigerian
                         descent.</p>
-                    <p><i class="fa fa-dot-circle-o"></i> The new NALA is preceded by a similar organization that existed until the 90s. The Nigerian
+                    <p><i class="fa fa-dot-circle-o"></i> The new NALA is preceded by a similar organization that
+                        existed until the 90s. The Nigerian
                         community met on March 7, 2015 where the Interim Management Team (IMT)was formed.</p>
-                    <p><i class="fa fa-dot-circle-o"></i> The IMT then convened a Special General Meeting on August 8, 2015 where New Officers were
+                    <p><i class="fa fa-dot-circle-o"></i> The IMT then convened a Special General Meeting on August 8,
+                        2015 where New Officers were
                         elected and the IMT handed over to the new team.</p>
                 </div>
 
@@ -94,16 +97,38 @@
                 <div class="col-md-12">
                     <div class="card card-carousel">
                         <div class="carousel slide three" id="teamCarousel" data-ride="carousel">
+                            <?php
+                            $query = new ParseQuery("Website");
+                            $query->equalTo("nickname", "Nigerian");
+                            $website = $query->first();
+                            $exec = $website->get('exec');
+                            $indicators = "";
+                            $items = "";
+                            for ($i = 0, $first = true; $i < count($exec); $i++) {
+                                $indicators += "<li data-target=\"#teamCarousel\" data-slide-to=\"" . $i . "\" class=\"" . ($first ? "active" : "") . "\"></li>";
+
+                                $photoURL = "assets/img/default-user.png";
+
+                                $items += "<div class=\"item" . ((i == 0) ? " active" : "") + "\"><div class=\"col-md-4\"><a href=\"#\"><img src=\"" . $photoURL . "\" class=\"img-responsive\"><div class=\"carousel-caption\"><h4><i class=\"material-icons\">people</i> " . $exec[$i]->get("name") . "</h4></div></a></div></div>";
+                                $first = false;
+                            }
+                            ?>
                             <ol class="carousel-indicators">
-                                <li data-target="#teamCarousel" data-slide-to="1" class="active"></li>
+                                <?php
+                                echo $indicators;
+                                ?>
+                                <!--<li data-target="#teamCarousel" data-slide-to="1" class="active"></li>
                                 <li data-target="#teamCarousel" data-slide-to="2" class=""></li>
                                 <li data-target="#teamCarousel" data-slide-to="3" class=""></li>
                                 <li data-target="#teamCarousel" data-slide-to="4" class=""></li>
                                 <li data-target="#teamCarousel" data-slide-to="5" class=""></li>
-                                <li data-target="#teamCarousel" data-slide-to="0" class=""></li>
+                                <li data-target="#teamCarousel" data-slide-to="0" class=""></li>-->
                             </ol>
                             <div class="carousel-inner">
-                                <div class="item">
+                                <?php
+                                echo $items;
+                                ?>
+                                <!--<div class="item">
                                     <div class="col-md-4">
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
@@ -162,7 +187,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
                             <a class="left carousel-control" href="#teamCarousel" data-slide="prev">
                                 <i class="material-icons black-icon">keyboard_arrow_left</i>
@@ -272,7 +297,8 @@
         </div>
     </div>
 
-    <div class="section suggestion-section header-filter" style="width: 100%; background-image: url(assets/img/city1.jpg) ;">
+    <div class="section suggestion-section header-filter"
+         style="width: 100%; background-image: url(assets/img/city1.jpg) ;">
         <div class="container">
             <div class="title text-center">
                 <h2><strong>Contact Us</strong></h2>
