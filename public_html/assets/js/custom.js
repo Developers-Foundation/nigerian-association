@@ -291,7 +291,8 @@ $(document).ready(function() {
             ExecPhoto = Parse.Object.extend("ExecPhoto");
         var execCarousel = $('.carousel-inner')[1];
         var inner = "";
-        for (i = 0; i < dbExec.length; i++) {
+        var i = 0;
+        for (; i < dbExec.length; i++) {
             var exec = dbExec[i];
             console.log(exec);
             var photoURL,
