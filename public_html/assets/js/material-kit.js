@@ -25,9 +25,9 @@ $(document).ready(function () {
     $('[data-toggle="popover"]').popover();
 
     // Active Carousel
-    /*$('.carousel').carousel({
+    $('.carousel:not(.three)').carousel({
         interval: 5000
-    });*/
+    });
 });
 
 materialKit = {
