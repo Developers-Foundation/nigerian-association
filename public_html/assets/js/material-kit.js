@@ -25,10 +25,9 @@ $(document).ready(function () {
     $('[data-toggle="popover"]').popover();
 
     // Active Carousel
-    $('.carousel').carousel({
+    /*$('.carousel').carousel({
         interval: 5000
-    });
-
+    });*/
 });
 
 materialKit = {
