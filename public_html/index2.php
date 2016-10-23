@@ -8,7 +8,7 @@
         <li data-target="#title-carousel" data-slide-to="4" class=""></li>
         <li data-target="#title-carousel" data-slide-to="5" class=""></li>
     </ol>
-    <div class="carousel-inner title-carousel" >
+    <div class="carousel-inner title-carousel">
         <div class="item">
             <img src="assets/img/bg.jpg" style="width: 100%;" class="img-responsive">
             <div class="carousel-caption">
@@ -72,11 +72,14 @@
                 <div class="col-md-8">
                     </br>
                     </br>
-                    <p><i class="fa fa-dot-circle-o"></i> The Nigerian Association of London and Area (NALA) is a community of Londoners of Nigerian
+                    <p><i class="fa fa-dot-circle-o"></i> The Nigerian Association of London and Area (NALA) is a
+                        community of Londoners of Nigerian
                         descent.</p>
-                    <p><i class="fa fa-dot-circle-o"></i> The new NALA is preceded by a similar organization that existed until the 90s. The Nigerian
+                    <p><i class="fa fa-dot-circle-o"></i> The new NALA is preceded by a similar organization that
+                        existed until the 90s. The Nigerian
                         community met on March 7, 2015 where the Interim Management Team (IMT)was formed.</p>
-                    <p><i class="fa fa-dot-circle-o"></i> The IMT then convened a Special General Meeting on August 8, 2015 where New Officers were
+                    <p><i class="fa fa-dot-circle-o"></i> The IMT then convened a Special General Meeting on August 8,
+                        2015 where New Officers were
                         elected and the IMT handed over to the new team.</p>
                 </div>
             </div>
@@ -261,29 +264,43 @@
                                         echo $page->getElementById('content');*/
                                         ?>
                                         <h3>Online Resources for Job Search</h3>
-                                        <a href="http://www.lehc.ca/?page_id=250" target="_blank"><strong>London
-                                                Employment Help Centre</strong> || Job Postings</a>
-                                        <a href="http://www.jobbank.gc.ca/res-eng.aspx?CmmGrp=GON009&amp;OpPage=50&amp;Stdnt=No&amp;nsrc=1"
-                                           target="_blank"><strong>Job Bank</strong> || Job Posts in London and Area</a>
-                                        <a href="http://onwin.ca/en/employment/" target="_blank"><strong>Ontario Work
-                                                Info Net</strong> || Career Planning</a>
-                                        <a href="https://careers2.hiredesk.net/ViewJobs/?Comp=CityofLondon&amp;TP_ID=1&amp;JB_ID=&amp;LAN=en-US"
-                                           target="_blank"><strong>City of London</strong> || Current Career
-                                            Opportunities</a>
-                                        <a href="http://www.gojobs.gov.on.ca/Search.aspx?Language=English"
-                                           target="_blank"><strong>Ontario Public Service</strong> || Jobs Posts in
-                                            London and Area&nbsp;</a>(English)
-                                        <a href="http://www.gojobs.gov.on.ca/Search.aspx?Language=French"
-                                           target="_blank"><strong>Ontario Public Service</strong> || Job Posts in
-                                            London and Area</a> (French)
-                                        <a href="http://www.workingincanada.gc.ca/job_search_results.do?searchstring=london&amp;button.submit=Search"
-                                           target="_blank"><strong>Working in Canada</strong> || Job Posts in London</a>
-                                        <a href="http://www.tcu.gov.on.ca/eng/employmentontario/"
-                                           target="_blank"><strong>Employment Ontario</strong> || Looking for Work?
-                                            Looking to Hire?</a>
-                                        <a href="http://www.ontarioimmigration.ca/en/geo/index.htm"
-                                           target="_blank"><strong>Global Experience Ontario || </strong>Resource Centre
-                                            for Internationally Trained Professionals&nbsp;</a>
+                                        <ul>
+                                            <li><a href="http://www.lehc.ca/?page_id=250" target="_blank"><strong>London
+                                                        Employment Help Centre</strong> || Job Postings</a></li>
+                                            <li>
+                                                <a href="http://www.jobbank.gc.ca/res-eng.aspx?CmmGrp=GON009&amp;OpPage=50&amp;Stdnt=No&amp;nsrc=1"
+                                                   target="_blank"><strong>Job Bank</strong> || Job Posts in London and
+                                                    Area</a></li>
+                                            <li><a href="http://onwin.ca/en/employment/" target="_blank"><strong>Ontario
+                                                        Work
+                                                        Info Net</strong> || Career Planning</a></li>
+                                            <li>
+                                                <a href="https://careers2.hiredesk.net/ViewJobs/?Comp=CityofLondon&amp;TP_ID=1&amp;JB_ID=&amp;LAN=en-US"
+                                                   target="_blank"><strong>City of London</strong> || Current Career
+                                                    Opportunities</a></li>
+                                            <li><a href="http://www.gojobs.gov.on.ca/Search.aspx?Language=English"
+                                                   target="_blank"><strong>Ontario Public Service</strong> || Jobs Posts
+                                                    in
+                                                    London and Area&nbsp;</a>(English)
+                                            </li>
+                                            <li><a href="http://www.gojobs.gov.on.ca/Search.aspx?Language=French"
+                                                   target="_blank"><strong>Ontario Public Service</strong> || Job Posts
+                                                    in
+                                                    London and Area</a> (French)
+                                            </li>
+                                            <li>
+                                                <a href="http://www.workingincanada.gc.ca/job_search_results.do?searchstring=london&amp;button.submit=Search"
+                                                   target="_blank"><strong>Working in Canada</strong> || Job Posts in
+                                                    London</a></li>
+                                            <li><a href="http://www.tcu.gov.on.ca/eng/employmentontario/"
+                                                   target="_blank"><strong>Employment Ontario</strong> || Looking for
+                                                    Work?
+                                                    Looking to Hire?</a></li>
+                                            <li><a href="http://www.ontarioimmigration.ca/en/geo/index.htm"
+                                                   target="_blank"><strong>Global Experience Ontario || </strong>Resource
+                                                    Centre
+                                                    for Internationally Trained Professionals&nbsp;</a></li>
+                                        </ul>
 
                                         <h3>Self Employment Resources</h3>
                                         <a href="http://sbcentre.ca/resources.php" target="_blank"><strong>London Small
@@ -305,7 +322,8 @@
         </div>
     </div>
 
-    <div class="section suggestion-section header-filter" style="width: 100%; background-image: url(assets/img/city1.jpg) ;">
+    <div class="section suggestion-section header-filter"
+         style="width: 100%; background-image: url(assets/img/city1.jpg) ;">
         <div class="container">
             <div class="title text-center">
                 <h2><strong>Contact Us</strong></h2>
