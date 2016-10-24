@@ -115,7 +115,7 @@
 
                                 $photoURL = "assets/img/default-user.png";
 
-                                $items += "<div class=\"item" . ((i == 0) ? " active" : "") + "\"><div class=\"col-md-4\"><a href=\"#\"><img src=\"" . $photoURL . "\" class=\"img-responsive\"><div class=\"carousel-caption\"><h4><i class=\"material-icons\">people</i> " . $exec[$i]->get("name") . "</h4></div></a></div></div>";
+                                $items += "<div class=\"item" . ($first ? " active" : "") + "\"><div class=\"col-md-4\"><a href=\"#\"><img src=\"" . $photoURL . "\" class=\"img-responsive\"><div class=\"carousel-caption\"><h4><i class=\"material-icons\">people</i> " . $exec[$i]->get("name") . "</h4></div></a></div></div>";
                                 $first = false;
                             }
                             ?>
