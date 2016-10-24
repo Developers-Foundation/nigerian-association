@@ -110,6 +110,7 @@
                             $exec = $website->get('exec');
                             $indicators = "";
                             $items = "";
+                            var_dump($exec);
                             for ($i = 0, $first = true; $i < count($exec); $i++) {
                                 $indicators += "<li data-target=\"#teamCarousel\" data-slide-to=\"" . $i . "\" class=\"" . ($first ? "active" : "") . "\"></li>";
 
