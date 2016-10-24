@@ -118,8 +118,8 @@
                                 $photoURL = "assets/img/default-user.png";
                                 $photoID = $exec[$i]["pictureid"];
                                 $query = new ParseQuery("ExecPhoto");
-                                $photo = $query->get($photoID);
                                 try {
+                                    $photo = $query->get($photoID);
                                     $photoURL = $photo->get("pictureUrl");
                                 } catch (ParseException $ex) {
                                     $photoURL = "assets/img/default-user.png";
