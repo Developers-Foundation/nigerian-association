@@ -101,7 +101,7 @@
                             use Parse\ParseClient;
                             use Parse\ParseQuery;
 
-                            ParseClient::initialize("developers-foundation-db", '', "");
+                            ParseClient::initialize("developers-foundation-db", '', "Abcd1234");
                             ParseClient::setServerURL("https://developers-foundation-db.herokuapp.com/parse");
 
                             $query = new ParseQuery("Website");
