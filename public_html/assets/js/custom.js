@@ -5,17 +5,17 @@
 /* Nob Three Carousel Correction
  /* ----------------------------------------------------------- */
 /*$('.carousel.three .item').each(function () {
-    var next = $(this).next();
-    if (!next.length) {
-        next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    if (next.next().length > 0) {
-        next.next().children(':first-child').clone().appendTo($(this));
-    } else {
-        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-    }
-});*/
+ var next = $(this).next();
+ if (!next.length) {
+ next = $(this).siblings(':first');
+ }
+ next.children(':first-child').clone().appendTo($(this));
+ if (next.next().length > 0) {
+ next.next().children(':first-child').clone().appendTo($(this));
+ } else {
+ $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+ }
+ });*/
 /* ----------------------------------------------------------- */
 /* Nob Three Carousel Correction END
  /* ----------------------------------------------------------- */
@@ -100,7 +100,7 @@ function loadedGmap() {
         });
 
         // add listener for a click on the pin
-        google.maps.event.addListener(marker1, 'click', function() {
+        google.maps.event.addListener(marker1, 'click', function () {
             infowindow.open(map, marker1);
         });
 
@@ -114,8 +114,8 @@ function loadedGmap() {
 /* ----------------------------------------------------------- */
 /* Nob Mailer START
  /* ----------------------------------------------------------- */
-$(document).ready(function() {
-    $('form.form-email').submit(function(e) {
+$(document).ready(function () {
+    $('form.form-email').submit(function (e) {
         if (e.preventDefault) e.preventDefault();
         else e.returnValue = false;
 
@@ -154,7 +154,7 @@ $(document).ready(function() {
                 cache: false,
                 dataType: 'json',
                 contentType: 'application/json; charset=utf-8',
-                success: function(data) {
+                success: function (data) {
                     // Deal with JSON
                     console.log(data);
                     var returnData = data;
@@ -173,7 +173,7 @@ $(document).ready(function() {
                     }
                     submitButton.prop("disabled", false);
                 },
-                error: function(error) {
+                error: function (error) {
                     console.log(error);
                     // Throw error message
                     submitButton.html("Sorry an error occured");
@@ -187,13 +187,13 @@ $(document).ready(function() {
 });
 /* ----------------------------------------------------------- */
 /* Nob Mailer END
-/* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */
 
 /* ----------------------------------------------------------- */
 /* Nob Mailer volunteer BEGIN TODO: You need to make this one efficient by combining original email and this volunteer
-/* ----------------------------------------------------------- */
-$(document).ready(function() {
-    $('form.form-volunteer').submit(function(e) {
+ /* ----------------------------------------------------------- */
+$(document).ready(function () {
+    $('form.form-volunteer').submit(function (e) {
         if (e.preventDefault) e.preventDefault();
         else e.returnValue = false;
 
@@ -232,7 +232,7 @@ $(document).ready(function() {
                 cache: false,
                 dataType: 'json',
                 contentType: 'application/json; charset=utf-8',
-                success: function(data) {
+                success: function (data) {
                     // Deal with JSON
                     console.log(data);
                     var returnData = data;
@@ -251,7 +251,7 @@ $(document).ready(function() {
                     }
                     submitButton.prop("disabled", false);
                 },
-                error: function(error) {
+                error: function (error) {
                     console.log(error);
                     // Throw error message
                     submitButton.html("Sorry an error occured");
@@ -266,15 +266,15 @@ $(document).ready(function() {
 
 /* ----------------------------------------------------------- */
 /* Nob API START
-/* ----------------------------------------------------------- */
-$(document).ready(function() {
+ /* ----------------------------------------------------------- */
+$(document).ready(function () {
     Parse.initialize("developers-foundation-db");
     Parse.serverURL = 'https://developers-foundation-db.herokuapp.com/parse';
 
     var Website = Parse.Object.extend("Website");
     var query = new Parse.Query(Website);
     query.equalTo("nickname", "Nigerian");
-    query.first().then(function(obj) {
+    query.first().then(function (obj) {
         var promises = [];
         console.log("THIS IS A DEMO");
         console.log(obj);
@@ -288,73 +288,71 @@ $(document).ready(function() {
         $('#item1').html(dbContent.data[1].content);
 
         /*var dbExec = obj.get('exec'),
-            ExecPhoto = Parse.Object.extend("ExecPhoto");
-        var inner = [];
-        var i = 0;
-        for (; i < dbExec.length; i++) {
-            var exec = dbExec[i];
-            console.log(exec);
-            var photoURL,
-                name = exec.name,
-                position = exec.position,
-                description = exec.desc;
+         ExecPhoto = Parse.Object.extend("ExecPhoto");
+         var inner = [];
+         var i = 0;
+         for (; i < dbExec.length; i++) {
+         var exec = dbExec[i];
+         console.log(exec);
+         var photoURL,
+         name = exec.name,
+         position = exec.position,
+         description = exec.desc;
 
-            var photoQuery = new Parse.Query(ExecPhoto);
+         var photoQuery = new Parse.Query(ExecPhoto);
 
-            <div class="item"><div class="col-md-4"><a href="#"><img src="assets/img/default-user.png" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> John Doe</h4></div></a></div></div>
+         <div class="item"><div class="col-md-4"><a href="#"><img src="assets/img/default-user.png" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> John Doe</h4></div></a></div></div>
 
-            promises.push(photoQuery.get(exec.pictureid, {
-                success: function(photo) {
-                    photoURL = photo.get('pictureUrl');
-                    if (photoURL === undefined || photoURL === null) {
-                        photoURL = "assets/img/default-user.png";
-                    }
+         promises.push(photoQuery.get(exec.pictureid, {
+         success: function(photo) {
+         photoURL = photo.get('pictureUrl');
+         if (photoURL === undefined || photoURL === null) {
+         photoURL = "assets/img/default-user.png";
+         }
 
-                    console.log(i + " URL: " + photoURL + "\nName: " + name);
-                    var item = '<div class="item' + ((i == 0) ? ' active' : '') + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
-                    inner.push(item);
+         console.log(i + " URL: " + photoURL + "\nName: " + name);
+         var item = '<div class="item' + ((i == 0) ? ' active' : '') + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+         inner.push(item);
 
-                    console.log(inner);
-                    updateExecCarousel(inner);
-                },
-                error: function(object, error) {
-                    console.log(error);
-                    photoURL = "assets/img/default-user.png";
+         console.log(inner);
+         updateExecCarousel(inner);
+         },
+         error: function(object, error) {
+         console.log(error);
+         photoURL = "assets/img/default-user.png";
 
-                    console.log(i + " URL: " + photoURL + "\nName: " + name);
-                    var item = '<div class="item' + ((i == 0) ? ' active' : '') + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
-                    inner.push(item);
+         console.log(i + " URL: " + photoURL + "\nName: " + name);
+         var item = '<div class="item' + ((i == 0) ? ' active' : '') + '"><div class="col-md-4"><a href="#"><img src="' + photoURL + '" class="img-responsive"><div class="carousel-caption"><h4><i class="material-icons">people</i> ' + name + '</h4></div></a></div></div>';
+         inner.push(item);
 
-                    console.log(inner);
-                    updateExecCarousel(inner);
-                }
-            }));
-        }
-        console.log(inner);*/
+         console.log(inner);
+         updateExecCarousel(inner);
+         }
+         }));
+         }
+         console.log(inner);*/
         return Parse.Promise.when(promises);
-    }).then(function() {
+    }).then(function () {
         // done
         console.log("init");
         // INIT CAROUSEL
         $('.carousel.three').carousel({
             interval: 5000
         });
-        setTimeout(function () {
-            $('.carousel.three .item').each(function() {
-                var next = $(this).next();
-                if (!next.length) {
-                    next = $(this).siblings(':first');
-                }
-                next.children(':first-child').clone().appendTo($(this));
-                if (next.next().length > 0) {
-                    next.next().children(':first-child').clone().appendTo($(this));
-                } else {
-                    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-                }
-            });
-        }, 1000);
+        $('.carousel.three .item').each(function () {
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+            if (next.next().length > 0) {
+                next.next().children(':first-child').clone().appendTo($(this));
+            } else {
+                $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+            }
+        });
     }, function (err) {
-    console.log(err);
+        console.log(err);
     });
 });
 
@@ -370,4 +368,4 @@ function updateExecCarousel(innerArr) {
 }
 /* ----------------------------------------------------------- */
 /* Nob API END
-/* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */

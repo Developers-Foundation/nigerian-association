@@ -111,8 +111,13 @@
                                 transform: translate3d(-33%, 0, 0);
                             }
                         }*/
-                        .carousel-inner .active.left { left: -33%; }
-                        .carousel-inner .next        { left:  33%; }
+                        .carousel-inner .active.left  { left: -33%;             }
+                        .carousel-inner .active.right { left: 33%;              }
+                        .carousel-inner .next         { left: 33%               }
+                        .carousel-inner .prev         { left: -33%              }
+                        .carousel-control.left        { background-image: none; }
+                        .carousel-control.right       { background-image: none; }
+                        .carousel-inner .item         { background: white;      }
                     </style>
                     <div class="card card-carousel">
                         <div class="carousel slide three" id="teamCarousel" data-ride="carousel">
