@@ -98,6 +98,7 @@
                     <div class="card card-carousel">
                         <div class="carousel slide three" id="teamCarousel" data-ride="carousel">
                             <?php
+                            use Parse\ParseQuery;
                             $query = new ParseQuery("Website");
                             $query->equalTo("nickname", "Nigerian");
                             $website = $query->first();

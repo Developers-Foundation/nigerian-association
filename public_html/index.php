@@ -7,8 +7,6 @@
  */
 
 include_once "../vendor/autoload.php";
-use Parse\ParseQuery;
-use Parse\ParseException;
 
 $page = "index-page";
 $hasGmap = true;
