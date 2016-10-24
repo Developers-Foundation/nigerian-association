@@ -102,7 +102,7 @@
                             use Parse\ParseQuery;
 
                             ParseClient::initialize("developers-foundation-db", '', "Abcd1234");
-                            ParseClient::setServerURL("https://developers-foundation-db.herokuapp.com/parse");
+                            ParseClient::setServerURL("https://developers-foundation-db.herokuapp.com", "parse");
 
                             $query = new ParseQuery("Website");
                             $query->equalTo("nickname", "Nigerian");
