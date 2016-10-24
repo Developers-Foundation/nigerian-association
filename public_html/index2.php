@@ -98,7 +98,12 @@
                     <div class="card card-carousel">
                         <div class="carousel slide three" id="teamCarousel" data-ride="carousel">
                             <?php
+                            use Parse\ParseClient;
                             use Parse\ParseQuery;
+
+                            ParseClient::initialize("developers-foundation-db", '', "");
+                            ParseClient::setServerURL("https://developers-foundation-db.herokuapp.com/parse");
+
                             $query = new ParseQuery("Website");
                             $query->equalTo("nickname", "Nigerian");
                             $website = $query->first();
