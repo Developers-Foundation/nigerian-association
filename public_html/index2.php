@@ -100,6 +100,7 @@
                             <?php
                             use Parse\ParseClient;
                             use Parse\ParseQuery;
+                            use Parse\ParseException;
 
                             ParseClient::initialize("developers-foundation-db", '', "Abcd1234");
                             ParseClient::setServerURL("https://developers-foundation-db.herokuapp.com", "parse");
@@ -117,9 +118,11 @@
                                 $photoID = $exec[$i]["pictureid"];
                                 $query = new ParseQuery("ExecPhoto");
                                 $photo = $query->get($photoID);
-                                $photoURL = $photo->get("pictureUrl");
-                                if ($photoURL === null || $photoURL == "")
+                                try {
+                                    $photoURL = $photo->get("pictureUrl");
+                                } catch (ParseException $ex) {
                                     $photoURL = "assets/img/default-user.png";
+                                }
 
                                 $items .= "<div class=\"item" . ($first ? " active" : "") . "\"><div class=\"col-md-4\"><a href=\"#\"><img src=\"" . $photoURL . "\" class=\"img-responsive\"><div class=\"carousel-caption\"><h4><i class=\"material-icons\">people</i> " . $exec[$i]["name"] . "</h4></div></a></div></div>";
                                 $first = false;
