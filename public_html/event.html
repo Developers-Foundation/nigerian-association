@@ -52,54 +52,55 @@
 <div class="main main-raised">
     <div class="section">
         <div class="container">
-            <div class="title col-md-12">
-                <h2><strong>Upcoming Events</strong></h2>
-            </div>
-            <hr>
+            <div class="row">
+                <div class="title col-md-12">
+                    <h2><strong>Upcoming Events</strong></h2>
+                </div>
+                <hr>
 
-            <div class="row col-lg-12">
-                <div class="box">
-                    <div class="col-centered text-center">
-                        <div id="carousel" class="carousel slide">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators hidden-xs">
-                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel" data-slide-to="1"></li>
-                                <li data-target="#carousel" data-slide-to="2"></li>
-                            </ol>
+                <div class="row col-lg-12">
+                    <div class="box">
+                        <div class="col-centered text-center">
+                            <div class="card card-raised card-carousel">
+                                <div id="carousel-event" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-event" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-event" data-slide-to="1"></li>
+                                        <li data-target="#carousel-event" data-slide-to="2"></li>
+                                    </ol>
 
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img class="img-responsive img-full" src="assets/img/bg4.jpeg" alt="">
-                                    <div class="carousel-caption">
-                                        <h2>Sample Event 1</h2>
-                                        <a href="#" class="btn btn-default btn-lg">Link To Modal</a>
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive img-full" src="assets/img/bg4.jpeg" alt="">
+                                            <div class="carousel-caption">
+                                                <h2>Sample Event 1</h2>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive img-full" src="assets/img/bg2.jpeg" alt="">
+                                            <div class="carousel-caption">
+                                                <h2>Sample Event 2</h2>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive img-full" src="assets/img/bg3.jpeg" alt="">
+                                            <div class="carousel-caption">
+                                                <h2>Sample Event 3</h2>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="item">
-                                    <img class="img-responsive img-full" src="assets/img/bg2.jpeg" alt="">
-                                    <div class="carousel-caption">
-                                        <h2>Sample Event 2</h2>
-                                        <a href="#" class="btn btn-default btn-lg">Link to Modal</a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img class="img-responsive img-full" src="assets/img/bg3.jpeg" alt="">
-                                    <div class="carousel-caption">
-                                        <h2>Sample Event 3</h2>
-                                        <a href="#" class="btn btn-default btn-lg">Link To Modaly</a>
-                                    </div>
+
+                                    <!-- Controls -->
+                                    <a class="left carousel-control" href="#carousel-event" data-slide="prev">
+                                        <i class="material-icons black-icon">keyboard_arrow_left</i>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-event" data-slide="next">
+                                        <i class="material-icons black-icon">keyboard_arrow_right</i>
+                                    </a>
                                 </div>
                             </div>
-
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#carousel" data-slide="prev">
-                                <i class="material-icons black-icon">keyboard_arrow_left</i>
-                            </a>
-                            <a class="right carousel-control" href="#carousel" data-slide="next">
-                                <i class="material-icons black-icon">keyboard_arrow_right</i>
-                            </a>
                         </div>
                     </div>
                 </div>

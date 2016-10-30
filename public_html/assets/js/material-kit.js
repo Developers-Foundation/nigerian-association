@@ -63,7 +63,7 @@ materialKit = {
         }
     }, 17)/*,
 
-     initSliders: function(){
+     initSliders: function () {
      // Sliders for demo purpose
      $('#sliderRegular').noUiSlider({
      start: 40,
@@ -75,7 +75,7 @@ materialKit = {
      });
 
      $('#sliderDouble').noUiSlider({
-     start: [20, 60] ,
+     start: [20, 60],
      connect: true,
      range: {
      min: 0,

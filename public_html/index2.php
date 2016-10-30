@@ -1,6 +1,6 @@
 <div class="header header-filter carousel slide" style="" id="title-carousel" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html">
-    <ol class="carousel-indicators">
+    <ol class="carousel-indicators hidden">
         <li data-target="#title-carousel" data-slide-to="0" class="active"></li>
         <li data-target="#title-carousel" data-slide-to="1" class=""></li>
         <li data-target="#title-carousel" data-slide-to="2" class=""></li>
