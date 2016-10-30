@@ -6,10 +6,9 @@
         <li data-target="#title-carousel" data-slide-to="2" class=""></li>
         <li data-target="#title-carousel" data-slide-to="3" class=""></li>
         <li data-target="#title-carousel" data-slide-to="4" class=""></li>
-        <li data-target="#title-carousel" data-slide-to="5" class=""></li>
     </ol>
     <div class="carousel-inner title-carousel">
-        <div class="item">
+        <div class="item active">
             <img src="assets/img/bg.jpg" style="width: 100%;" class="img-responsive">
             <div class="carousel-caption">
                 <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
@@ -34,7 +33,7 @@
                 <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
             </div>
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="assets/img/bg6.jpg" style="width: 100%;" class="img-responsive">
             <div class="carousel-caption">
                 <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
@@ -148,6 +147,8 @@
                                 } catch (ParseException $ex) {
                                     $photoURL = "assets/img/default-user.png";
                                 }
+
+                                $photoURL = "http://placehold.it/500/bbbbbb/fff&amp;text=" . $i;
 
                                 $items .= "<div class=\"item" . ($first ? " active" : "") . "\"><div class=\"col-md-4\"><a href=\"#\"><img src=\"" . $photoURL . "\" class=\"img-responsive\"><div class=\"carousel-caption\"><h4><i class=\"material-icons\">people</i> " . $exec[$i]["name"] . "</h4></div></a></div></div>";
                                 $first = false;
