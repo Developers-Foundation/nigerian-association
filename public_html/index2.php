@@ -97,15 +97,15 @@
                 <div class="col-md-12">
                     <style>
                         @media all and (transform-3d), (-webkit-transform-3d) {
-                            .carousel-inner > .item.next,
-                            .carousel-inner > .item.active.right {
+                            (.three .carousel-inner) > .item.next,
+                            (.three .carousel-inner) > .item.active.right {
                                 left: 0;
                                 -webkit-transform: translate3d(33%, 0, 0);
                                 transform: translate3d(33%, 0, 0);
                             }
 
-                            .carousel-inner > .item.prev,
-                            .carousel-inner > .item.active.left {
+                            (.three .carousel-inner) > .item.prev,
+                            (.three .carousel-inner) > .item.active.left {
                                 left: 0;
                                 -webkit-transform: translate3d(-33%, 0, 0);
                                 transform: translate3d(-33%, 0, 0);
