@@ -109,6 +109,7 @@
                                             <img src="assets/img/exec/Chimere%20Okoronkwo(Chairman).jpg" class="img-responsive">
                                             <div class="carousel-caption">
                                                 <h4><i class="material-icons">people</i> Chimere Okoronkwo</h4>
+                                                <h4>Chairman</h4>
                                             </div>
                                         </a></div>
                                 </div>
@@ -117,17 +118,8 @@
                                         <a href="#">
                                             <img src="assets/img/exec/Mrs%20Oluyinka%20Fayemi%20(Vice%20Chairperson).jpg" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">people_outline</i> John Doe2</h4>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-4">
-                                        <a href="#">
-                                            <img src="assets/img/exec/Afeez%20Ajibowu%20(Secretary).JPG" class="img-responsive">
-                                            <div class="carousel-caption">
-                                                <h4><i class="material-icons">portrait</i> John Doe3</h4>
+                                                <h4><i class="material-icons">people_outline</i> Mrs Oluyinka Fayemi</h4>
+                                                <h4>Vice Chairperson</h4>
                                             </div>
                                         </a>
                                     </div>
@@ -137,7 +129,19 @@
                                         <a href="#">
                                             <img src="assets/img/exec/Olabisi%20Olawoore%20(treasurer).jpg" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">tag_face</i> John Doe4</h4>
+                                                <h4><i class="material-icons">tag_face</i> Olabisi Olawoore</h4>
+                                                <h4>Treasurer</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <a href="#">
+                                            <img src="assets/img/exec/Afeez%20Ajibowu%20(Secretary).JPG" class="img-responsive">
+                                            <div class="carousel-caption">
+                                                <h4><i class="material-icons">portrait</i> Afeez Ajibowu</h4>
+                                                <h4>Secretary</h4>
                                             </div>
                                         </a>
                                     </div>
@@ -147,9 +151,8 @@
                                         <a href="#">
                                             <img src="assets/img/exec/Selfa%20Pyentam%20(Board%20Member-at-Large)%202.JPG" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">airline_seat_individual_suite</i> John
-                                                    Doe5
-                                                </h4>
+                                                <h4><i class="material-icons">airline_seat_individual_suite</i> Selfa Pyentam</h4>
+                                                <h4>Board Member-at-Large</h4>
                                             </div>
                                         </a>
                                     </div>
@@ -159,7 +162,8 @@
                                         <a href="#">
                                             <img src="assets/img/exec/Adam%20Garba%20(Immediate%20Past%20Chairman).png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">mood</i> John Doe6</h4>
+                                                <h4><i class="material-icons">mood</i> Adam Garba</h4>
+                                                <h4>Immediate Past Chairman</h4>
                                             </div>
                                         </a>
                                     </div>
