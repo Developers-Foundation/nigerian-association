@@ -1,15 +1,14 @@
 <div class="header header-filter carousel slide" style="" id="title-carousel" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html">
-    <ol class="carousel-indicators hidden">
+    <ol class="carousel-indicators">
         <li data-target="#title-carousel" data-slide-to="0" class="active"></li>
         <li data-target="#title-carousel" data-slide-to="1" class=""></li>
         <li data-target="#title-carousel" data-slide-to="2" class=""></li>
         <li data-target="#title-carousel" data-slide-to="3" class=""></li>
         <li data-target="#title-carousel" data-slide-to="4" class=""></li>
-        <li data-target="#title-carousel" data-slide-to="5" class=""></li>
     </ol>
     <div class="carousel-inner title-carousel">
-        <div class="item">
+        <div class="item active">
             <img src="assets/img/bg.jpg" style="width: 100%;" class="img-responsive">
             <div class="carousel-caption">
                 <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
@@ -33,7 +32,7 @@
                 <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
             </div>
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="assets/img/bg6.jpg" style="width: 100%;" class="img-responsive">
             <div class="carousel-caption">
                 <!--<h4><i class="material-icons">mood</i> John Doe</h4>-->
@@ -107,16 +106,16 @@
                                 <div class="item">
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="assets/img/default-user.png" class="img-responsive">
+                                            <img src="assets/img/exec/Chimere%20Okoronkwo(Chairman).jpg" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">people</i> John Doe1</h4>
+                                                <h4><i class="material-icons">people</i> Chimere Okoronkwo</h4>
                                             </div>
                                         </a></div>
                                 </div>
                                 <div class="item">
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="assets/img/default-user.png" class="img-responsive">
+                                            <img src="assets/img/exec/Mrs%20Oluyinka%20Fayemi%20(Vice%20Chairperson).jpg" class="img-responsive">
                                             <div class="carousel-caption">
                                                 <h4><i class="material-icons">people_outline</i> John Doe2</h4>
                                             </div>
@@ -126,7 +125,7 @@
                                 <div class="item">
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="assets/img/default-user.png" class="img-responsive">
+                                            <img src="assets/img/exec/Afeez%20Ajibowu%20(Secretary).JPG" class="img-responsive">
                                             <div class="carousel-caption">
                                                 <h4><i class="material-icons">portrait</i> John Doe3</h4>
                                             </div>
@@ -136,7 +135,7 @@
                                 <div class="item">
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="assets/img/default-user.png" class="img-responsive">
+                                            <img src="assets/img/exec/Olabisi%20Olawoore%20(treasurer).jpg" class="img-responsive">
                                             <div class="carousel-caption">
                                                 <h4><i class="material-icons">tag_face</i> John Doe4</h4>
                                             </div>
@@ -146,9 +145,10 @@
                                 <div class="item">
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="assets/img/default-user.png" class="img-responsive">
+                                            <img src="assets/img/exec/Selfa%20Pyentam%20(Board%20Member-at-Large)%202.JPG" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">airline_seat_individual_suite</i> John Doe5
+                                                <h4><i class="material-icons">airline_seat_individual_suite</i> John
+                                                    Doe5
                                                 </h4>
                                             </div>
                                         </a>
@@ -157,7 +157,7 @@
                                 <div class="item active">
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="assets/img/default-user.png" class="img-responsive">
+                                            <img src="assets/img/exec/Adam%20Garba%20(Immediate%20Past%20Chairman).png" class="img-responsive">
                                             <div class="carousel-caption">
                                                 <h4><i class="material-icons">mood</i> John Doe6</h4>
                                             </div>

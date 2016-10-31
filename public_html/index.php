@@ -6,6 +6,8 @@
  * Time: 10:55 PM
  */
 
+include_once "../vendor/autoload.php";
+
 $page = "index-page";
 $hasGmap = true;
 include_once("header.php");

@@ -89,6 +89,11 @@
 </body>
 <!--   Core JS Files   -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="//www.parsecdn.com/js/parse-1.6.14.min.js"></script>
+<script>
+Parse.initialize("developers-foundation-db");
+Parse.serverURL = 'https://developers-foundation-db.herokuapp.com/parse'
+</script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="assets/js/material.min.js"></script>
 

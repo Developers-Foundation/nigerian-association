@@ -28,28 +28,56 @@ function loadedGmap() {
         var styleArr = [{
             "featureType": "administrative",
             "elementType": "labels.text.fill",
-            "stylers": [{"color": "#444444"}]
-        }, {"featureType": "landscape", "elementType": "all", "stylers": [{"color": "#f2f2f2"}]}, {
+            "stylers": [{
+                "color": "#444444"
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [{
+                "color": "#f2f2f2"
+            }]
+        }, {
             "featureType": "poi",
             "elementType": "all",
-            "stylers": [{"visibility": "off"}]
+            "stylers": [{
+                "visibility": "off"
+            }]
         }, {
             "featureType": "road",
             "elementType": "all",
-            "stylers": [{"saturation": -100}, {"lightness": 45}]
+            "stylers": [{
+                "saturation": -100
+            }, {
+                "lightness": 45
+            }]
         }, {
             "featureType": "road.highway",
             "elementType": "all",
-            "stylers": [{"visibility": "simplified"}]
+            "stylers": [{
+                "visibility": "simplified"
+            }]
         }, {
             "featureType": "road.arterial",
             "elementType": "labels.icon",
-            "stylers": [{"visibility": "off"}]
+            "stylers": [{
+                "visibility": "off"
+            }]
         }, {
             "featureType": "transit",
             "elementType": "all",
-            "stylers": [{"visibility": "off"}]
-        }, {"featureType": "water", "elementType": "all", "stylers": [{"color": "#e3e3fb"}, {"visibility": "on"}]}];
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [{
+                "color": "#e3e3fb"
+            }, {
+                "visibility": "on"
+            }]
+        }];
 
         // prepare the map properties
         var options = {
@@ -68,7 +96,8 @@ function loadedGmap() {
 
         // add Marker
         var marker1 = new google.maps.Marker({
-            position: latlng, map: map
+            position: latlng,
+            map: map
         });
 
         // add listener for a click on the pin
@@ -86,8 +115,8 @@ function loadedGmap() {
 /* ----------------------------------------------------------- */
 /* Nob Mailer START
  /* ----------------------------------------------------------- */
-$(document).ready(function() {
-    $('form.form-email').submit(function(e) {
+$(document).ready(function () {
+    $('form.form-email').submit(function (e) {
         if (e.preventDefault) e.preventDefault();
         else e.returnValue = false;
 
