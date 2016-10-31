@@ -16,6 +16,18 @@
  $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
  }
  });*/
+$('.carousel.three .item').each(function () {
+    var next = $(this).next();
+    if (!next.length) {
+        next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    if (next.next().length > 0) {
+        next.next().children(':first-child').clone().appendTo($(this));
+    } else {
+        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+    }
+});
 /* ----------------------------------------------------------- */
 /* Nob Three Carousel Correction END
  /* ----------------------------------------------------------- */
@@ -339,7 +351,7 @@ $(document).ready(function () {
         $('.carousel.three').carousel({
             interval: 5000
         });
-        $('.carousel.three .item').each(function () {
+        /*$('.carousel.three .item').each(function () {
             var next = $(this).next();
             if (!next.length) {
                 next = $(this).siblings(':first');
@@ -350,7 +362,7 @@ $(document).ready(function () {
             } else {
                 $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
             }
-        });
+        });*/
     }, function (err) {
         console.log(err);
     });

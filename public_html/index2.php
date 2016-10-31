@@ -95,7 +95,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <style>
-                        @media all and (transform-3d), (-webkit-transform-3d) {
+                        /*@media all and (transform-3d), (-webkit-transform-3d) {
                             .carousel-inner > .item.next,
                             .carousel-inner > .item.active.right {
                                 left: 0;
@@ -109,7 +109,10 @@
                                 -webkit-transform: translate3d(-33%, 0, 0);
                                 transform: translate3d(-33%, 0, 0);
                             }
-                        }
+                        }*/
+                        .three .active.left { left: -33% !important; }
+                        .three .next        { left:  33% !important; }
+                        .three .prev        { left: -33% !important; }
                     </style>
                     <div class="card card-carousel">
                         <div class="carousel slide three" id="teamCarousel" data-ride="carousel">
