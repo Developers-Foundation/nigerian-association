@@ -92,7 +92,7 @@
             <hr>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="card card-carousel">
+                    <div class="card card-carousel exec-carousel">
                         <div class="carousel slide three" id="teamCarousel" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#teamCarousel" data-slide-to="1" class="active"></li>

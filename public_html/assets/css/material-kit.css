@@ -4049,6 +4049,14 @@ h2.title {
     }
 }
 
+.exec-carousel .carousel-inner {
+    height: 450px;
+}
+
+.exec-carousel .item {
+    overflow-y: hidden;
+}
+
 hr {
     border-color: #008000;
     border-width: 4px;
