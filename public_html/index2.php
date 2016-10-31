@@ -109,7 +109,7 @@
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">people</i> John Doe</h4>
+                                                <h4><i class="material-icons">people</i> John Doe1</h4>
                                             </div>
                                         </a></div>
                                 </div>
@@ -118,7 +118,7 @@
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">people_outline</i> John Doe</h4>
+                                                <h4><i class="material-icons">people_outline</i> John Doe2</h4>
                                             </div>
                                         </a>
                                     </div>
@@ -128,7 +128,7 @@
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">portrait</i> John Doe</h4>
+                                                <h4><i class="material-icons">portrait</i> John Doe3</h4>
                                             </div>
                                         </a>
                                     </div>
@@ -138,7 +138,7 @@
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">tag_face</i> John Doe</h4>
+                                                <h4><i class="material-icons">tag_face</i> John Doe4</h4>
                                             </div>
                                         </a>
                                     </div>
@@ -148,7 +148,7 @@
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">airline_seat_individual_suite</i> John Doe
+                                                <h4><i class="material-icons">airline_seat_individual_suite</i> John Doe5
                                                 </h4>
                                             </div>
                                         </a>
@@ -159,7 +159,7 @@
                                         <a href="#">
                                             <img src="assets/img/default-user.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">mood</i> John Doe</h4>
+                                                <h4><i class="material-icons">mood</i> John Doe6</h4>
                                             </div>
                                         </a>
                                     </div>

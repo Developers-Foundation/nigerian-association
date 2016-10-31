@@ -427,22 +427,6 @@
     vertical-align: middle;
 }
 
-.carousel.three .carousel-inner .active.left {
-    left: -33%;
-}
-
-.carousel.three .carousel-inner .active.right {
-    left: 33%;
-}
-
-.carousel.three .carousel-inner .next {
-    left: 33%
-}
-
-.carousel.three .carousel-inner .prev {
-    left: -33%
-}
-
 .carousel.three .carousel-control.left {
     background-image: none;
 }
