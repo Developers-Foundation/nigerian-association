@@ -42,10 +42,10 @@ a, a:hover, a:focus {
     /*color: #9c27b0;*/
     color: #46a149;
 }
-
+/*
 a .material-icons, a:hover .material-icons, a:focus .material-icons {
     vertical-align: middle;
-}
+} /*
 
 /*           Animations              */
 .animation-transition-general, .carousel .carousel-indicators li {
@@ -2828,7 +2828,7 @@ h6, .h6 {
 }
 
 .carousel .carousel-caption {
-    padding-bottom: 45px;
+    padding-bottom: 5px;
 }
 
 .carousel .carousel-caption .material-icons {

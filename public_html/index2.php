@@ -1,6 +1,6 @@
 <div class="header header-filter carousel slide" style="" id="title-carousel" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html">
-    <ol class="carousel-indicators">
+    <ol class="carousel-indicators hidden">
         <li data-target="#title-carousel" data-slide-to="0" class="active"></li>
         <li data-target="#title-carousel" data-slide-to="1" class=""></li>
         <li data-target="#title-carousel" data-slide-to="2" class=""></li>
@@ -93,8 +93,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card card-carousel exec-carousel">
-                        <div class="carousel slide three" id="teamCarousel" data-ride="carousel">
-                            <ol class="carousel-indicators">
+                        <div class="carousel slide three" id="teamCarousel" data-ride="carousel" style="padding-top: 25px;">
+                            <ol class="carousel-indicators hidden-sm-down">
                                 <li data-target="#teamCarousel" data-slide-to="1" class="active"></li>
                                 <li data-target="#teamCarousel" data-slide-to="2" class=""></li>
                                 <li data-target="#teamCarousel" data-slide-to="3" class=""></li>
@@ -106,9 +106,9 @@
                                 <div class="item">
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="assets/img/exec/Chimere%20Okoronkwo(Chairman).jpg" class="img-responsive">
+                                            <img src="assets/img/exec/Chimere%20Okoronkwo.jpg" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">people</i> Chimere Okoronkwo</h4>
+                                                <h4><i class="material-icons">portrait</i>Chimere Okoronkwo</h4>
                                                 <h4>Chairman</h4>
                                             </div>
                                         </a></div>
@@ -116,9 +116,9 @@
                                 <div class="item">
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="assets/img/exec/Mrs%20Oluyinka%20Fayemi%20(Vice%20Chairperson).jpg" class="img-responsive">
+                                            <img src="assets/img/exec/Mrs%20Oluyinka%20Fayemi.jpg" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">people_outline</i> Mrs Oluyinka Fayemi</h4>
+                                                <h4><i class="material-icons">portrait</i>Mrs Oluyinka Fayemi</h4>
                                                 <h4>Vice Chairperson</h4>
                                             </div>
                                         </a>
@@ -127,9 +127,9 @@
                                 <div class="item">
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="assets/img/exec/Olabisi%20Olawoore%20(treasurer).jpg" class="img-responsive">
+                                            <img src="assets/img/exec/Olabisi%20Olawoore.jpg" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">tag_face</i> Olabisi Olawoore</h4>
+                                                <h4><i class="material-icons">portrait</i>Olabisi Olawoore</h4>
                                                 <h4>Treasurer</h4>
                                             </div>
                                         </a>
@@ -138,9 +138,9 @@
                                 <div class="item">
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="assets/img/exec/Afeez%20Ajibowu%20(Secretary).JPG" class="img-responsive">
+                                            <img src="assets/img/exec/Afeez%20Ajibowu.jpg" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">portrait</i> Afeez Ajibowu</h4>
+                                                <h4><i class="material-icons">portrait</i>Afeez Ajibowu</h4>
                                                 <h4>Secretary</h4>
                                             </div>
                                         </a>
@@ -149,9 +149,9 @@
                                 <div class="item">
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="assets/img/exec/Selfa%20Pyentam%20(Board%20Member-at-Large)%202.JPG" class="img-responsive">
+                                            <img src="assets/img/exec/Selfa%20Pyentam.jpg" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">airline_seat_individual_suite</i> Selfa Pyentam</h4>
+                                                <h4><i class="material-icons">portrait</i>Selfa Pyentam</h4>
                                                 <h4>Board Member-at-Large</h4>
                                             </div>
                                         </a>
@@ -160,9 +160,9 @@
                                 <div class="item active">
                                     <div class="col-md-4">
                                         <a href="#">
-                                            <img src="assets/img/exec/Adam%20Garba%20(Immediate%20Past%20Chairman).png" class="img-responsive">
+                                            <img src="assets/img/exec/Adam%20Garba.png" class="img-responsive">
                                             <div class="carousel-caption">
-                                                <h4><i class="material-icons">mood</i> Adam Garba</h4>
+                                                <h4><i class="material-icons">portrait</i>Adam Garba</h4>
                                                 <h4>Immediate Past Chairman</h4>
                                             </div>
                                         </a>
