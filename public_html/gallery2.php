@@ -74,6 +74,45 @@
                                         </a>
                                     </div>
                                 </div>
+                                <div class="gallery-item">
+                                    <div class="hover-bg">
+                                        <a href="#nob-lb-gallery" data-slide-to="12" data-toggle="modal">
+                                            <div class="hover-text img-rounded">
+                                                <h4>Test</h4>
+                                                <div class="clearfix"></div>
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </div>
+                                            <img src="assets/img/gallery/P1000779.JPG"
+                                                 class="img-responsive img-rounded">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="hover-bg">
+                                        <a href="#nob-lb-gallery" data-slide-to="15" data-toggle="modal">
+                                            <div class="hover-text img-rounded">
+                                                <h4>Test</h4>
+                                                <div class="clearfix"></div>
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </div>
+                                            <img src="assets/img/gallery/P1000809.JPG"
+                                                 class="img-responsive img-rounded">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="hover-bg">
+                                        <a href="#nob-lb-gallery" data-slide-to="18" data-toggle="modal">
+                                            <div class="hover-text img-rounded">
+                                                <h4>Test</h4>
+                                                <div class="clearfix"></div>
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </div>
+                                            <img src="assets/img/gallery/P1010395.JPG"
+                                                 class="img-responsive img-rounded">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="gallery-item">
@@ -128,6 +167,45 @@
                                         </a>
                                     </div>
                                 </div>
+                                <div class="gallery-item">
+                                    <div class="hover-bg">
+                                        <a href="#nob-lb-gallery" data-slide-to="12" data-toggle="modal">
+                                            <div class="hover-text img-rounded">
+                                                <h4>Test</h4>
+                                                <div class="clearfix"></div>
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </div>
+                                            <img src="assets/img/gallery/P1000780.JPG"
+                                                 class="img-responsive img-rounded">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="hover-bg">
+                                        <a href="#nob-lb-gallery" data-slide-to="16" data-toggle="modal">
+                                            <div class="hover-text img-rounded">
+                                                <h4>Test</h4>
+                                                <div class="clearfix"></div>
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </div>
+                                            <img src="assets/img/gallery/P1010385.JPG"
+                                                 class="img-responsive img-rounded">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="hover-bg">
+                                        <a href="#nob-lb-gallery" data-slide-to="19" data-toggle="modal">
+                                            <div class="hover-text img-rounded">
+                                                <h4>Test</h4>
+                                                <div class="clearfix"></div>
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </div>
+                                            <img src="assets/img/gallery/P1010396.JPG"
+                                                 class="img-responsive img-rounded">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="gallery-item">
@@ -178,6 +256,32 @@
                                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                                             </div>
                                             <img src="assets/img/gallery/P1000861-1024x768.jpg"
+                                                 class="img-responsive img-rounded">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="hover-bg">
+                                        <a href="#nob-lb-gallery" data-slide-to="14" data-toggle="modal">
+                                            <div class="hover-text img-rounded">
+                                                <h4>Test</h4>
+                                                <div class="clearfix"></div>
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </div>
+                                            <img src="assets/img/gallery/P1000785.JPG"
+                                                 class="img-responsive img-rounded">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="hover-bg">
+                                        <a href="#nob-lb-gallery" data-slide-to="17" data-toggle="modal">
+                                            <div class="hover-text img-rounded">
+                                                <h4>Test</h4>
+                                                <div class="clearfix"></div>
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </div>
+                                            <img src="assets/img/gallery/P1010386.JPG"
                                                  class="img-responsive img-rounded">
                                         </a>
                                     </div>
