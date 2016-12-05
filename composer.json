@@ -10,6 +10,7 @@
     }
   ],
   "require": {
-    "sendgrid/sendgrid": "4.0.4"
+    "sendgrid/sendgrid": "4.0.4",
+    "parse/php-sdk": "1.2.1"
   }
 }
