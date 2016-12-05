@@ -73,9 +73,16 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <img class="img-responsive" src="assets/img/bg4.jpeg" alt="">
-                                            <div class="carousel-caption">
-                                                <h2>Sample Event 1</h2>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h2>Event: </h2>
+                                                    <img class="img-responsive" src="assets/img/bg.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <h4>Location: </h4>
+                                                    <h4>Time: </h4>
+                                                    <h4>Date: </h4>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="item">
