@@ -4033,6 +4033,31 @@ h2.title {
     }
 }
 
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .three .item.next,
+    .three .carousel-inner > .item.active.right {
+        left: 0;
+        -webkit-transform: translate3d(33%, 0, 0);
+        transform: translate3d(33%, 0, 0);
+    }
+
+    .three .item.prev,
+    .three .carousel-inner > .item.active.left {
+        left: 0;
+        -webkit-transform: translate3d(-33%, 0, 0);
+        transform: translate3d(-33%, 0, 0);
+    }
+}
+
+.exec-carousel .carousel-inner {
+    height: 450px;
+}
+
+.exec-carousel .item {
+    overflow-y: hidden;
+    height: 100%;
+}
+
 hr {
     border-color: #008000;
     border-width: 4px;
@@ -4045,4 +4070,8 @@ hr {
     height: 600px;
     width: 100%;
     overflow: hidden;
+}
+
+#job-opportunities ul {
+    list-style-type: none;
 }
